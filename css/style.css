@@ -32,6 +32,29 @@ body {
   padding: 0 24px;
 }
 
+.main-session .intro-name {
+  margin: 0;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  color: #ff6b00;
+  font-size: 56px;
+}
+
+.main-session .profession {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  color: #fff5e1;
+}
+
+.main-session .about {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 @media all and (max-width: 375px) {
   .nav-bar ul {
     justify-content: space-between;
