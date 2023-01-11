@@ -55,7 +55,14 @@ body {
   line-height: 24px;
 }
 
-@media all and (max-width: 375px) {
+/*Social links*/
+.main-session .social{
+  display: flex;
+  font-size: 24px;
+  width: 50%;
+}
+
+@media all and (min-width: 375px) {
   .nav-bar ul {
     justify-content: space-between;
     padding: 12px 24px;
@@ -63,5 +70,9 @@ body {
 
   .main-session {
     justify-content: center;
+  }
+
+  .main-session .social{
+    justify-content: space-evenly;
   }
 }
