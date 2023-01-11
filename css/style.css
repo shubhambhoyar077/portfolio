@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-/*nav-bar design as per microverse template 2*/
+/* nav-bar design as per microverse template 2 */
 .nav-bar ul {
   background-color: #3c3a39;
   display: flex;
@@ -12,7 +12,7 @@ body {
 
 .nav-bar .nav-item {
   color: white;
-  font-family: 'Roboto';
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-style: normal;
   font-size: 18px;
 }
@@ -21,9 +21,24 @@ body {
   list-style: none;
 }
 
+/* main body css */
+.main-session {
+  background-color: #1c1a19;
+  color: white;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  padding: 0 24px;
+}
+
 @media all and (max-width: 375px) {
   .nav-bar ul {
     justify-content: space-between;
     padding: 12px 24px;
+  }
+
+  .main-session {
+    justify-content: center;
   }
 }
