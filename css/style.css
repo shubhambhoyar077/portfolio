@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+
+.nav-bar ul{
+    background-color: #3C3A39;
+    display: flex;
+    margin: 0;
+    padding: 12px 0;
+    
+}
+
+.nav-bar .nav-item{
+    color: white;
+    font-size: 18px;
+    
+}
+
+.nav-bar li{
+    list-style: none;
+}
+
+@media all and (max-width:375px){
+    .nav-bar ul{
+        justify-content: space-between;
+        padding: 12px 24px;
+    }
+}
