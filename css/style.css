@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #1c1a19;
 }
 
 /* nav-bar design as per microverse template 2 */
@@ -23,21 +24,25 @@ body {
 
 /* main body css */
 .main-session {
-  background-color: #1c1a19;
   color: white;
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 45px);
   margin: 0;
-  flex-direction: column;
   padding: 0 24px;
+
+  /* Background img (Need to be Fixed) */
+  background-image: url("../img/Group.png");
+  background-repeat: no-repeat;
+  background-position: bottom -50px right;
 }
 
+/* main body content */
 .main-session .intro-name {
   margin: 0;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   color: #ff6b00;
-  font-size: 56px;
+  font-size: 50px;
 }
 
 .main-session .profession {
@@ -55,13 +60,14 @@ body {
   line-height: 24px;
 }
 
-/*Social links*/
-.main-session .social{
+/* Social links */
+.main-session .social {
   display: flex;
   font-size: 24px;
   width: 170px;
 }
 
+/* Mobile first CSS model */
 @media all and (min-width: 375px) {
   .nav-bar ul {
     justify-content: space-between;
@@ -69,10 +75,11 @@ body {
   }
 
   .main-session {
+    flex-direction: column;
     justify-content: center;
   }
 
-  .main-session .social{
+  .main-session .social {
     justify-content: space-evenly;
   }
 }
