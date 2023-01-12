@@ -117,6 +117,7 @@ body {
   .work-section .project1 .project-img{
     width: 327px;
     height: 237px;
+    margin-bottom: 24px;
   }
 
 .work-section .project1{
@@ -174,6 +175,24 @@ body {
    .work-section .half-btn:disabled{
     background-color: #F4F1F0;
     color: #5B5957;
+   }
+
+   .work-section .project-description{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 12px 0;
+   }
+
+   .work-section .project-name{
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    margin: 0;
    }
  
 
