@@ -119,6 +119,18 @@ body {
     height: 237px;
   }
 
+.work-section .project1{
+    display: flex;
+}
+.work-section .half-btn{
+    width: 124px;
+    height: 48px;
+    background-color: #ff6b00;
+    border: none;
+    color: white;
+}
+
+
   .work-section .project-sample{
     background-image: url("../img/project-bag.png");
     background-repeat: no-repeat;
@@ -157,6 +169,9 @@ body {
   /*work section*/
   .work-section .project-lang{
     justify-content: flex-start;
+  }
+  .work-section .project1{
+    flex-direction: column;
   }
   .work-section .project-sample{
     flex-direction: column;
