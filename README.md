@@ -95,7 +95,7 @@ Clone this [repository](https://github.com/shubhambhoyar077/portfolio) to your d
 
 ### Install
 
-Install this project with:
+This project does not require installation.
 
 ### Usage
 
@@ -125,9 +125,7 @@ You can deploy this project using: Project is incomplete.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Support any device resolution]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -165,13 +163,9 @@ I would like to thank Microverse.
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- **[Question_1]**
+- **[Can I use this project for my website?]**
 
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+  - [It's MIT license, feel free to use as you like.]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
