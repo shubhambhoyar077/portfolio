@@ -148,6 +148,37 @@ body {
     border: none;
     color: white;
   }
+
+  .work-section .project-sample .full-btn,
+   .work-section .half-btn{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+   }
+  
+  .work-section .project-sample .full-btn:hover,
+   .work-section .half-btn:hover{
+    color: #F55800;
+    background-color: #FFF5E1;
+    border: 1px solid #F55800;
+  }
+
+  .work-section .project-sample .full-btn:active,
+   .work-section .half-btn:active{
+    color: white;
+    background-color: #E05304;
+  }
+
+  .work-section .project-sample .full-btn:disabled,
+   .work-section .half-btn:disabled{
+    background-color: #F4F1F0;
+    color: #5B5957;
+   }
+ 
+
+  
+
   /*-----Work section-----end*/
 
 /* Mobile first CSS model */
