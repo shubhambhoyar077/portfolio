@@ -28,7 +28,7 @@ body {
 }
 
 /* main body css */
-.main-session {
+.intro-section {
   color: white;
   display: flex;
   height: calc(100vh - 45px);
@@ -42,7 +42,7 @@ body {
 }
 
 /* main body content */
-.main-session .intro-name {
+.intro-section .intro-name {
   margin: 0;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -50,7 +50,7 @@ body {
   font-size: 50px;
 }
 
-.main-session .profession {
+.intro-section .profession {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -58,7 +58,7 @@ body {
   color: #fff5e1;
 }
 
-.main-session .about {
+.intro-section .about {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -67,7 +67,7 @@ body {
 }
 
 /* Social links */
-.main-session .social {
+.intro-section .social {
   display: flex;
   font-size: 24px;
   width: 180px;
@@ -76,12 +76,12 @@ body {
   margin: 0;
 }
 
-.main-session .social-link {
+.intro-section .social-link {
   text-decoration: none;
   color: #fff5e1;
 }
 
-.main-session .social-link:hover {
+.intro-section .social-link:hover {
   color: #ffd581;
 }
 
@@ -92,12 +92,12 @@ body {
     padding: 12px 24px;
   }
 
-  .main-session {
+  .intro-section {
     flex-direction: column;
     justify-content: center;
   }
 
-  .main-session .social {
+  .intro-section .social {
     justify-content: space-between;
   }
 }
