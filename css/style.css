@@ -126,6 +126,7 @@ body {
     color: white;
     width: 327px;
     height: 386px;
+    display: flex;
   }
   /*-----Work section-----end*/
 
@@ -148,5 +149,9 @@ body {
   /*work section*/
   .work-section .project-lang{
     justify-content: flex-start;
+  }
+  .work-section .project-sample{
+    flex-direction: column;
+    justify-content: flex-end;
   }
 }
