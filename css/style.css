@@ -70,7 +70,7 @@ body {
 .main-session .social {
   display: flex;
   font-size: 24px;
-  width: 170px;
+  width: 180px;
 }
 
 .main-session .social-link {
@@ -95,6 +95,6 @@ body {
   }
 
   .main-session .social {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 }
