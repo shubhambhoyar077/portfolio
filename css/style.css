@@ -265,6 +265,44 @@ line-height: 24px;
   font-weight: 700;
   font-size: 15px;
 }
+
+.about-me-section .skill-set ul{
+  padding: 0;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  
+}
+.about-me-section .skill-set .lang{
+  list-style-image: url("../img/Rectangle.png");
+}
+.about-me-section .skill-set .fram{
+  list-style-image: url("../img/sq.png");
+}
+.about-me-section .skill-set .skills{
+  list-style-image: url("../img/ca.png");
+}
+.about-me-section .skill-set .category{
+  font-family: 'InaiMathi';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  
+}
+.about-me-section .skill-set .sublist{
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.about-me-section .skill-set .sublist {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  margin: 25px;
+}
 /*-------About me-------end*/
 
 /* Mobile first CSS model */
@@ -299,5 +337,14 @@ line-height: 24px;
 
   .about-me-section .grid-wrapper .aboutme{
     flex-direction: column;
+  }
+
+  .about-me-section .skill-set ul{
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-me-section .skill-set .sublist{
+    flex-direction: column;
+    align-items: center;
   }
 }
