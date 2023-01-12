@@ -159,7 +159,7 @@ body {
 
 .work-section .project-sample .full-btn,
 .work-section .half-btn {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -185,7 +185,7 @@ body {
 }
 
 .work-section .project-description {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -194,7 +194,7 @@ body {
 }
 
 .work-section .project-name {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -203,7 +203,7 @@ body {
 }
 
 .work-section .work-section-heading {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -237,7 +237,7 @@ body {
 }
 
 .about-me-section .title {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
@@ -247,7 +247,7 @@ body {
 }
 
 .about-me-section .summary {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -261,7 +261,7 @@ body {
   color: white;
   width: 161px;
   height: 48px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
@@ -303,7 +303,7 @@ body {
 }
 
 .about-me-section .skill-set .category {
-  font-family: 'InaiMathi';
+  font-family: 'InaiMathi', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -314,7 +314,7 @@ body {
   list-style: none;
   display: flex;
   padding: 0;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
