@@ -85,6 +85,46 @@ body {
   color: #ffd581;
 }
 
+/*-----Work section-----*/
+.work-section{
+    padding: 0 24px;
+}
+.work-section .grid-wrapper{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 24px;
+    padding: 80px 0;
+  }
+
+  /*project language*/
+  .work-section .project-lang{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    
+  }
+  .work-section .project-lang li{
+    border: 1px solid #8993A4;
+    padding: 10px 12px;
+    margin-right: 12px;
+  }
+
+  /*images*/
+  .work-section .project1 .project-img{
+    width: 327px;
+    height: 237px;
+  }
+
+  .work-section .project-demo-img{
+    background-image: url("../img/project-bag.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 327px;
+    height: 386px;
+  }
+  /*-----Work section-----end*/
+
 /* Mobile first CSS model */
 @media all and (min-width: 375px) {
   .nav-bar ul {
@@ -99,5 +139,10 @@ body {
 
   .intro-section .social {
     justify-content: space-between;
+  }
+
+  /*work section*/
+  .work-section .project-lang{
+    justify-content: flex-start;
   }
 }
