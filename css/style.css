@@ -19,12 +19,12 @@ body {
   list-style: none;
 }
 
-.nav-bar .toggle-menu{
-    cursor: pointer;
+.nav-bar .toggle-menu {
+  cursor: pointer;
 }
 
-.nav-bar .toggle-menu:hover{
-    color: #ffd581;
+.nav-bar .toggle-menu:hover {
+  color: #ffd581;
 }
 
 /* main body css */
@@ -72,13 +72,13 @@ body {
   width: 170px;
 }
 
-.main-session .social-link{
-    text-decoration: none;
-    color: #fff5e1;
+.main-session .social-link {
+  text-decoration: none;
+  color: #fff5e1;
 }
 
-.main-session .social-link:hover{
-    color: #ffd581;
+.main-session .social-link:hover {
+  color: #ffd581;
 }
 
 /* Mobile first CSS model */
