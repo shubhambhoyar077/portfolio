@@ -194,6 +194,15 @@ body {
     line-height: 44px;
     margin: 0;
    }
+
+   .work-section .work-section-heading{
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    padding: 68px 0;
+    border-bottom: 1px solid black;
+   }
  
 
   
