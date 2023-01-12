@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  background-color: #1c1a19;
 }
 
 /* nav-bar design as per microverse template 2 */
@@ -30,6 +29,7 @@ body {
 /* main body css */
 .intro-section {
   color: white;
+  background-color: #1c1a19;
   display: flex;
   height: calc(100vh - 45px);
   margin: 0;
