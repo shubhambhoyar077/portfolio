@@ -210,11 +210,32 @@ body {
   padding: 68px 0;
   border-bottom: 1px solid black;
 }
-
-
-
-
 /* -----Work section-----end */
+
+/*-------About me-------*/
+.about-me-section{
+  padding: 0 24px;
+  background-color: #1c1a19;
+  color: white;
+  background-image: url("../img/aboutme-bag.png");
+  background-repeat: no-repeat;
+  background-position: right 70vh;
+  
+}
+.about-me-section .grid-wrapper{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 100vh;
+  row-gap: 24px;
+  padding: 80px 0;
+
+  
+}
+
+.about-me-section .grid-wrapper .aboutme{
+  /* Background img (Need to be Fixed) */
+}
+/*-------About me-------end*/
 
 /* Mobile first CSS model */
 @media all and (min-width: 375px) {
