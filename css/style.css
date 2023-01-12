@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  background-color: #1c1a19;
+}
+
+/* nav-bar design as per microverse template 2 */
+.nav-bar ul {
+  background-color: #3c3a39;
+  display: flex;
+  margin: 0;
+  padding: 12px 0;
+}
+
+.nav-bar .nav-item {
+  color: white;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  list-style: none;
+}
+
+.nav-bar .toggle-menu {
+  cursor: pointer;
+}
+
+.nav-bar .toggle-menu:hover {
+  color: #ffd581;
+}
+
+/* main body css */
+.main-session {
+  color: white;
+  display: flex;
+  height: calc(100vh - 45px);
+  margin: 0;
+  padding: 0 24px;
+
+  /* Background img (Need to be Fixed) */
+  background-image: url("../img/Group.png");
+  background-repeat: no-repeat;
+  background-position: bottom -50px right;
+}
+
+/* main body content */
+.main-session .intro-name {
+  margin: 0;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  color: #ff6b00;
+  font-size: 50px;
+}
+
+.main-session .profession {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  color: #fff5e1;
+}
+
+.main-session .about {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Social links */
+.main-session .social {
+  display: flex;
+  font-size: 24px;
+  width: 180px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-session .social-link {
+  text-decoration: none;
+  color: #fff5e1;
+}
+
+.main-session .social-link:hover {
+  color: #ffd581;
+}
+
+/* Mobile first CSS model */
+@media all and (min-width: 375px) {
+  .nav-bar ul {
+    justify-content: space-between;
+    padding: 12px 24px;
+  }
+
+  .main-session {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-session .social {
+    justify-content: space-between;
+  }
+}
