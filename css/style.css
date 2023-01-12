@@ -107,10 +107,16 @@ body {
     padding: 0;
     
   }
-  .work-section .project-lang li{
+  .work-section .project1 .project-lang li{
     border: 1px solid #8993A4;
     padding: 10px 12px;
     margin-right: 12px;
+  }
+
+  .work-section .project-sample .project-lang li{
+    padding: 10px 12px;
+    margin-right: 12px;
+    background: rgba(255, 255, 255, 0.24);
   }
 
   /*images*/
