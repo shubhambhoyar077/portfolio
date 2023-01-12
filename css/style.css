@@ -96,6 +96,10 @@ body {
     padding: 80px 0;
   }
 
+.work-section .content-wrapper{
+    padding: 0 16px;
+}
+
   /*project language*/
   .work-section .project-lang{
     list-style: none;
@@ -115,7 +119,7 @@ body {
     height: 237px;
   }
 
-  .work-section .project-demo-img{
+  .work-section .project-sample{
     background-image: url("../img/project-bag.png");
     background-repeat: no-repeat;
     background-size: cover;
