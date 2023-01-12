@@ -233,7 +233,37 @@ body {
 }
 
 .about-me-section .grid-wrapper .aboutme{
-  /* Background img (Need to be Fixed) */
+  display: flex;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.about-me-section .title{
+  font-family: 'Crete Round';
+font-style: normal;
+font-weight: 400;
+font-size: 72px;
+line-height: 88px;
+color: #FF6B00;
+margin: 0;
+}
+.about-me-section .summary{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+.about-me-section .resume{
+  padding: 12px;
+  background-color: #FF6B00;
+  border: none;
+  color: white;
+  width: 161px;
+  height: 48px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
 }
 /*-------About me-------end*/
 
@@ -265,5 +295,9 @@ body {
   .work-section .project-sample {
     flex-direction: column;
     justify-content: flex-end;
+  }
+
+  .about-me-section .grid-wrapper .aboutme{
+    flex-direction: column;
   }
 }
