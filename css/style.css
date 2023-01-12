@@ -266,6 +266,22 @@ line-height: 24px;
   font-size: 15px;
 }
 
+.about-me-section .resume:hover {
+  color: #f55800;
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+.about-me-section .resume:active{
+  color: white;
+  background-color: #e05304;
+}
+
+.about-me-section .resume:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
 .about-me-section .skill-set ul{
   padding: 0;
   display: flex;
