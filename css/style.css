@@ -128,6 +128,14 @@ body {
     height: 386px;
     display: flex;
   }
+
+  .work-section .project-sample .full-btn{
+    width: 327px;
+    height: 48px;
+    background-color: #ff6b00;
+    border: none;
+    color: white;
+  }
   /*-----Work section-----end*/
 
 /* Mobile first CSS model */
