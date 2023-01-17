@@ -325,6 +325,35 @@ body {
 
 /* -------About me-------end */
 
+/*---Contact section---*/
+.contact-section{
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  padding: 0 24px;
+  flex-direction: column;
+}
+.contact-section .contact-form ul{
+  list-style: none;
+  padding: 0;
+}
+
+.contact-section .contact-form .input-field{
+  width: 100%;
+  margin-bottom: 24px;
+  outline: none;
+  border: none;
+  border-bottom:2px solid #adadad;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+/*---Contact section---end*/
+
 /* Mobile first CSS model */
 @media all and (min-width: 375px) {
   .nav-bar ul {
