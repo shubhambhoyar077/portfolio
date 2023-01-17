@@ -172,13 +172,13 @@
             <form class="contact-form" action="https://formspree.io/f/xjvdkweq" method="post">
                 <ul>
                     <li>
-                        <input class="input-field" type="text" id="name" name="user_name" placeholder="Full name" maxlength="30">
+                        <input class="input-field" type="text" id="name" name="user_name" placeholder="Full name" maxlength="30" required="required">
                     </li>
                     <li>
-                        <input class="input-field" type="email" id="mail" name="user_email" placeholder="Email address">
+                        <input class="input-field" type="email" pattern="[^@\s]+@[^@\s]+" id="mail" name="user_email" placeholder="Email address" required="required">
                     </li>
                     <li>
-                        <textarea class="input-field text-area" name="user_message" id="msg" cols="30" rows="5" placeholder="Enter text here" maxlength="500"></textarea>
+                        <textarea class="input-field text-area" name="user_message" id="msg" cols="30" rows="5" placeholder="Enter text here" maxlength="500" required="required"></textarea>
                     </li>
                     <li class="con-btn"><button type="submit">Get in touch</button></li>
                 </ul>
