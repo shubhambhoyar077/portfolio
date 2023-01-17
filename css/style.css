@@ -67,16 +67,17 @@ body {
 }
 
 /* Social links */
-.intro-section .social {
+.intro-section .social, .footer-section .social {
   display: flex;
   font-size: 24px;
   width: 180px;
   list-style: none;
   padding: 0;
   margin: 0;
+  justify-content: space-between;
 }
 
-.intro-section .social-link {
+.intro-section .social-link{
   text-decoration: none;
   color: #fff5e1;
 }
@@ -334,10 +335,6 @@ body {
   .intro-section {
     flex-direction: column;
     justify-content: center;
-  }
-
-  .intro-section .social {
-    justify-content: space-between;
   }
 
   /* work section */
