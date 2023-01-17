@@ -67,7 +67,7 @@ body {
 }
 
 /* Social links */
-.intro-section .social, .footer-section .social {
+.intro-section .social {
   display: flex;
   font-size: 24px;
   width: 180px;
@@ -132,7 +132,8 @@ body {
   display: flex;
 }
 
-.work-section .half-btn {
+.work-section .half-btn,
+.contact-section .contact-form button {
   width: 124px;
   height: 48px;
   background-color: #ff6b00;
@@ -159,7 +160,8 @@ body {
 }
 
 .work-section .project-sample .full-btn,
-.work-section .half-btn {
+.work-section .half-btn,
+.contact-section .contact-form button {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -167,20 +169,23 @@ body {
 }
 
 .work-section .project-sample .full-btn:hover,
-.work-section .half-btn:hover {
+.work-section .half-btn:hover,
+.contact-section .contact-form button:hover {
   color: #f55800;
   background-color: #fff5e1;
   border: 1px solid #f55800;
 }
 
 .work-section .project-sample .full-btn:active,
-.work-section .half-btn:active {
+.work-section .half-btn:active,
+.contact-section .contact-form button:active {
   color: white;
   background-color: #e05304;
 }
 
 .work-section .project-sample .full-btn:disabled,
-.work-section .half-btn:disabled {
+.work-section .half-btn:disabled,
+.contact-section .contact-form button:disabled {
   background-color: #f4f1f0;
   color: #5b5957;
 }
@@ -365,8 +370,42 @@ color: #172B4D;
   font-size: 15px;
   line-height: 24px;
 }
+.contact-section .contact-form .con-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-section .contact-form button{
+  width: 131px;
+}
 
 /*---Contact section---end*/
+
+
+.footer-section .social .social-link{
+  padding: 0 11px; 
+  text-decoration: none;
+  margin: 25px 0;
+  color: #505F79;
+}
+
+.footer-section .social .social-link:hover{
+  color: #282b30;
+}
+
+.footer-section .social{
+  display: flex;
+  font-size: 24px;
+  padding: 0 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.footer-section hr{
+  color: #DFE1E6;
+}
 
 /* Mobile first CSS model */
 @media all and (min-width: 375px) {
