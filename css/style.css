@@ -77,7 +77,7 @@ body {
   justify-content: space-between;
 }
 
-.intro-section .social-link{
+.intro-section .social-link {
   text-decoration: none;
   color: #fff5e1;
 }
@@ -139,6 +139,10 @@ body {
   background-color: #ff6b00;
   border: none;
   color: white;
+}
+
+.contact-section .contact-form button {
+  width: 131px;
 }
 
 .work-section .project-sample {
@@ -330,88 +334,85 @@ body {
 
 /* -------About me-------end */
 
-/*---Contact section---*/
-.contact-section{
+/* ---Contact section--- */
+.contact-section {
   display: flex;
   height: calc(100vh + 120px);
   margin: 0;
   margin-top: 120px;
   padding: 0 24px;
   flex-direction: column;
-  
 }
 
-.contact-section h3{
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 44px;
-text-align: center;
-color: #172B4D;
-
+.contact-section h3 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
 }
 
-.contact-section .contact-form ul{
+.contact-section .contact-form ul {
   list-style: none;
   padding: 0;
 }
 
-.contact-section .contact-form .input-field{
+.contact-section .contact-form .input-field {
   width: 100%;
   margin-bottom: 24px;
   outline: none;
   border: none;
-  border-bottom:2px solid #adadad;
-
-  font-family: 'Inter';
+  border-bottom: 2px solid #adadad;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
 }
-.contact-section .contact-form .text-area{
-  background-color: #FBF8F7;
+
+.contact-section .contact-form .text-area {
+  background-color: #fbf8f7;
   border: none;
 }
-.contact-section .contact-form .con-btn{
+
+.contact-section .contact-form .con-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.contact-section .contact-form button{
-  width: 131px;
-}
 
-/*---Contact section---end*/
 
-.footer-section{
+
+/* ---Contact section---end */
+
+.footer-section {
   margin-top: 100px;
 }
 
-.footer-section .social .social-link{
-  padding: 0 11px; 
+.footer-section .social .social-link {
+  padding: 0 11px;
   text-decoration: none;
   margin: 25px 0;
-  color: #505F79;
+  color: #505f79;
 }
 
-.footer-section .social .social-link:hover{
+.footer-section .social .social-link:hover {
   color: #282b30;
 }
 
-.footer-section .social{
+.footer-section .social {
   display: flex;
   font-size: 24px;
   padding: 0 24px;
   list-style: none;
-  padding: 0;
   margin: 0;
   justify-content: center;
 }
 
-.footer-section hr{
-  color: #DFE1E6;
+.footer-section hr {
+  color: #dfe1e6;
 }
 
 /* Mobile first CSS model */
