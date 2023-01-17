@@ -370,6 +370,10 @@ color: #172B4D;
   font-size: 15px;
   line-height: 24px;
 }
+.contact-section .contact-form .text-area{
+  background-color: #FBF8F7;
+  border: none;
+}
 .contact-section .contact-form .con-btn{
   display: flex;
   flex-direction: column;
@@ -381,6 +385,9 @@ color: #172B4D;
 
 /*---Contact section---end*/
 
+.footer-section{
+  margin-top: 100px;
+}
 
 .footer-section .social .social-link{
   padding: 0 11px; 
