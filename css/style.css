@@ -432,5 +432,33 @@ body {
 
 
 @media all and (min-width: 768px) {
- 
+ /* ---about me--- */
+ .about-me-section {
+  background-image: url("../img/desktopaboutbg.png");
+  background-size: contain;
+  background-position: right top;
+}
+ .about-me-section .skill-set ul{
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  
+ }
+ .about-me-section .skill-set .sublist{
+  align-items: flex-start;
+ }
+ /* ---about me end--- */
+
+ /* --contact--- */
+ .contact-section{
+  flex-direction: row;
+ }
+ .contact-section h3{
+  flex: 1;
+ }
+ .contact-section .contact-form{
+  flex: 2;
+  padding-left: 40px;
+ }
+ /* ---contact end--- */
 }
