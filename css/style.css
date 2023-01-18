@@ -454,7 +454,9 @@ body {
     display: none;
   }
   /* ---Intro--- */
-  
+  .intro-section .start-intro{
+    max-width: 50%;
+  }
   /* ---Intro end--- */
   /* ---Work--- */
   .work-section .work-section-heading{
@@ -486,10 +488,10 @@ body {
  .about-me-section {
   background-image: url("../img/aboutdskbg.png");
   background-size: contain;
-  background-position: top 200px right;
+  background-position: top right;
 }
 .about-me-section .grid-wrapper .aboutme {
-  max-width: 45%;
+  max-width: 50%;
 }
 
 .about-me-section .grid-wrapper .aboutme h2{
@@ -533,7 +535,7 @@ body {
     justify-content: center;
     order: -1;
     width: 24px;
-    padding-left: 3%;
+    padding-left: 2%;
   }
   .intro-section .social .social-link{
     padding-bottom: 24px;
@@ -544,7 +546,7 @@ body {
   }
   .intro-section .start-intro{
     max-width: 35%;
-    padding-left: calc(4% - 24px);
+    padding-left: calc(5% - 24px);
   }
   .work-section .project1{
     grid-area: 1/ span 3;
