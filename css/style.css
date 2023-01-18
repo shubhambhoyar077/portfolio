@@ -444,6 +444,17 @@ body {
   /* ---Intro--- */
   /* ---Intro end--- */
   /* ---Work--- */
+  .work-section .work-section-heading{
+    border-bottom: 1px solid #000; 
+    margin: 10px 0 20px; 
+    line-height: 0.1em;
+    padding-top: 68px;
+    padding-bottom: 0;
+  }
+  .work-section .work-section-heading span{
+    background:#fff;
+    padding-right: 24px;
+  }
  .work-section .project1{
   grid-area: 1/ span 2;
  }
