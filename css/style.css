@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+:root {
+  --common-padding: 0 7%;
+}
+
 /* nav-bar design as per microverse template 2 */
 .nav-bar ul {
   background-color: #3c3a39;
@@ -35,7 +39,7 @@ body {
   display: flex;
   height: calc(100vh - 45px);
   margin: 0;
-  padding: 0 24px;
+  padding: var(--common-padding);
   flex-direction: column;
   justify-content: center;
 
@@ -92,7 +96,7 @@ body {
 
 /* -----Work section----- */
 .work-section {
-  padding: 0 24px;
+  padding: var(--common-padding);
 }
 
 .work-section .grid-wrapper {
@@ -233,7 +237,7 @@ body {
 
 /* -------About me------- */
 .about-me-section {
-  padding: 0 24px;
+  padding: var(--common-padding);
   background-color: #1c1a19;
   color: white;
   background-image: url("../img/aboutme-bag.png");
@@ -353,7 +357,7 @@ body {
   height: calc(100vh + 120px);
   margin: 0;
   margin-top: 120px;
-  padding: 0 24px;
+  padding: var(--common-padding);
   flex-direction: column;
 }
 
