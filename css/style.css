@@ -104,6 +104,7 @@ body {
   grid-template-columns: auto;
   row-gap: 24px;
   padding: 80px 0;
+  gap: 24px;
 }
 
 .work-section .content-wrapper {
@@ -132,8 +133,8 @@ body {
 
 /* images */
 .work-section .project1 .project-img {
-  width: 327px;
-  height: 237px;
+  width: 100%;
+  height: auto;
   margin-bottom: 24px;
 }
 
@@ -440,8 +441,22 @@ body {
 
 
 @media all and (min-width: 768px) {
+  /* ---Intro--- */
+  /* ---Intro end--- */
   /* ---Work--- */
-
+ .work-section .project1{
+  grid-area: 1/ span 2;
+ }
+ .work-section .project1 {
+  flex-direction: row;
+ }
+ .work-section .project1 .project-content{
+  display: flex;
+  flex-direction: column;
+  max-width: 45%;
+  padding-left: 24px;
+ }
+ 
   /* ---work end--- */
  /* ---about me--- */
  .about-me-section {
@@ -476,4 +491,14 @@ body {
   padding-left: 40px;
  }
  /* ---contact end--- */
+}
+
+@media all and (min-width: 1340px){
+  .work-section .project1{
+    grid-area: 1/ span 3;
+   }
+   .work-section .project-sample {
+    width: 369px;
+    height: 435px;
+   }
 }
