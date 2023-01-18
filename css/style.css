@@ -441,7 +441,7 @@ body {
 
 @media all and (min-width: 768px) {
   /* ---Work--- */
-  
+
   /* ---work end--- */
  /* ---about me--- */
  .about-me-section {
@@ -450,7 +450,7 @@ body {
   background-position: top right;
 }
 .about-me-section .grid-wrapper .aboutme {
-  max-width: 50%;
+  max-width: 45%;
 }
 
  .about-me-section .skill-set ul{
