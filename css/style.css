@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 12px 0;
   justify-content: space-between;
-  padding: 12px 24px;
+  padding: 12px 7%;
 }
 
 .nav-bar .nav-item {
@@ -473,10 +473,14 @@ body {
  .about-me-section {
   background-image: url("../img/aboutdskbg.png");
   background-size: contain;
-  background-position: top right;
+  background-position: top 200px right;
 }
 .about-me-section .grid-wrapper .aboutme {
   max-width: 45%;
+}
+
+.about-me-section .grid-wrapper .aboutme h2{
+  white-space: nowrap;
 }
 
  .about-me-section .skill-set ul{
@@ -512,4 +516,7 @@ body {
     width: 369px;
     height: 435px;
    }
+   .about-me-section {
+    background-position: top right;
+  }
 }
