@@ -47,7 +47,6 @@ body {
   flex-direction: column;
   justify-content: center;
 
-  /* Background img (Need to be Fixed) */
   background-image: url("../img/Group.png");
   background-repeat: no-repeat;
   background-position: bottom -50px right;
@@ -455,6 +454,7 @@ body {
     display: none;
   }
   /* ---Intro--- */
+  
   /* ---Intro end--- */
   /* ---Work--- */
   .work-section .work-section-heading{
@@ -522,6 +522,30 @@ body {
 }
 
 @media all and (min-width: 1340px){
+  .intro-section {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    justify-content: start;
+  }
+  .intro-section .social {
+    flex-direction: column;
+    justify-content: center;
+    order: -1;
+    width: 24px;
+    padding-left: 3%;
+  }
+  .intro-section .social .social-link{
+    padding-bottom: 24px;
+    
+  }
+  .intro-section .social .social-link:hover {
+    color: #ffd581;
+  }
+  .intro-section .start-intro{
+    max-width: 35%;
+    padding-left: calc(4% - 24px);
+  }
   .work-section .project1{
     grid-area: 1/ span 3;
    }
