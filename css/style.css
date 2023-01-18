@@ -164,7 +164,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  width: 327px;
+  width: 100%;
   height: 386px;
   display: flex;
   flex-direction: column;
@@ -172,7 +172,7 @@ body {
 }
 
 .work-section .project-sample .full-btn {
-  width: 327px;
+  width: 100%;
   height: 48px;
   background-color: #ff6b00;
   border: none;
