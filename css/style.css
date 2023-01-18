@@ -250,13 +250,17 @@ body {
   grid-template-columns: auto;
   grid-template-rows: 100vh;
   row-gap: 24px;
-  padding: 80px 0;
+  padding-top: 80px;
 }
 
 .about-me-section .grid-wrapper .aboutme {
   display: flex;
-  border-bottom: 1px solid #fff;
   flex-direction: column;
+}
+
+.about-me-section .grid-wrapper .skill-set hr{
+  color: #fff;
+  margin-bottom: 140px;
 }
 
 .about-me-section .title {
@@ -304,6 +308,10 @@ body {
 .about-me-section .resume:disabled {
   background-color: #f4f1f0;
   color: #5b5957;
+}
+
+.about-me-section .skill-set{
+  margin-bottom: 100px;
 }
 
 .about-me-section .skill-set ul {
@@ -432,12 +440,19 @@ body {
 
 
 @media all and (min-width: 768px) {
+  /* ---Work--- */
+  
+  /* ---work end--- */
  /* ---about me--- */
  .about-me-section {
-  background-image: url("../img/desktopaboutbg.png");
+  background-image: url("../img/aboutdskbg.png");
   background-size: contain;
-  background-position: right top;
+  background-position: top right;
 }
+.about-me-section .grid-wrapper .aboutme {
+  max-width: 50%;
+}
+
  .about-me-section .skill-set ul{
   flex-direction: row;
   justify-content: space-around;
