@@ -24,12 +24,16 @@ body {
   list-style: none;
 }
 
-.nav-bar .toggle-menu {
+.nav-bar .menu {
   cursor: pointer;
 }
 
-.nav-bar .toggle-menu:hover {
+.nav-bar .menu:hover {
   color: #ffd581;
+}
+
+.nav-bar .open-menu{
+  display: none;
 }
 
 /* main body css */
@@ -441,6 +445,15 @@ body {
 
 
 @media all and (min-width: 768px) {
+  .nav-bar .open-menu{
+    display: flex;
+  }
+  .nav-bar .open-menu li:not(:last-child){
+    padding-right: 24px;  
+  }
+  .nav-bar .toggle-menu{
+    display: none;
+  }
   /* ---Intro--- */
   /* ---Intro end--- */
   /* ---Work--- */
