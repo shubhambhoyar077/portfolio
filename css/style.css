@@ -23,12 +23,15 @@ body {
   font-size: 18px;
   list-style: none;
 }
-
+.nav-bar .nav-item .social-link{
+  color: white;
+  text-decoration: none;
+}
 .nav-bar .menu {
   cursor: pointer;
 }
 
-.nav-bar .menu:hover {
+.nav-bar .nav-item .social-link:hover {
   color: #ffd581;
 }
 
