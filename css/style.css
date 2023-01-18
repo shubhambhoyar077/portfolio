@@ -454,6 +454,11 @@ body {
     display: none;
   }
   /* ---Intro--- */
+  .intro-section{
+    background-image: url("../img/desktopbg.png");
+    background-size: contain;
+    background-position: center right;
+  }
   .intro-section .start-intro{
     max-width: 50%;
   }
@@ -488,7 +493,7 @@ body {
  .about-me-section {
   background-image: url("../img/aboutdskbg.png");
   background-size: contain;
-  background-position: top right;
+  background-position: top 150px right;
 }
 .about-me-section .grid-wrapper .aboutme {
   max-width: 50%;
@@ -511,14 +516,7 @@ body {
 
  /* --contact--- */
  .contact-section{
-  flex-direction: row;
- }
- .contact-section h3{
-  flex: 1;
- }
- .contact-section .contact-form{
-  flex: 2;
-  padding-left: 40px;
+  height: 100vh;
  }
  /* ---contact end--- */
 }
@@ -558,4 +556,15 @@ body {
    .about-me-section {
     background-position: top right;
   }
+  .contact-section{
+    flex-direction: row;
+    height: 100vh;
+   }
+   .contact-section h3{
+    flex: 1;
+   }
+   .contact-section .contact-form{
+    flex: 2;
+    padding-left: 40px;
+   }
 }
