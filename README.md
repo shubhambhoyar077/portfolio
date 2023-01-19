@@ -43,14 +43,14 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li></li>
+    <li>HTML and CSS</li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li>HTML and CSS</li>
+    <li></li>
   </ul>
 </details>
 
@@ -65,9 +65,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Simple Design]**
+- **[Support all device size]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

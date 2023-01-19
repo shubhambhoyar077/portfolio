@@ -13,16 +13,25 @@
         <nav class="nav-bar">
             <ul>
                 <li class="nav-item name">Shubham Bhoyar</li>
-                <li class="nav-item toggle-menu"><a class="social-link fa fa-bars"></a></li>
+                
+                <li class="nav-item toggle-menu menu"><a class="social-link fa fa-bars"></a></li>
+                <div class="open-menu">
+                    <li class="nav-item menu"><a href="#portfolio" class="social-link">Portfolio</a></li>
+                    <li class="nav-item menu"><a href="#about" class="social-link">About</a></li>
+                    <li class="nav-item menu"><a href="#contact" class="social-link">Contact</a></li>
+                    <li class="nav-item menu"><a class="social-link fa fa-envelope"></a></li>
+                </div>
             </ul>
         </nav>
     </header>
     <main class="main-area">
         <section class="intro-section">
-            <h1 class="intro-name">Hey There. I'm Alex</h1>
-            <h3 class="profession">I'am a Software Developer</h3>
-            <p class="about">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-                don't hestiate to contact me.</p>
+            <div class="start-intro">
+                <h1 class="intro-name">Hey There. I'm Shubham</h1>
+                <h3 class="profession">I'am a Software Developer</h3>
+                <p class="about">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+                    don't hestiate to contact me.</p>
+            </div>
             <ul class="social">
                 <li><a href="#" class="social-link fa fa-github"></a></li>
                 <li><a href="#" class="social-link fa fa-linkedin"></a></li>
@@ -32,21 +41,23 @@
             </ul>
         </section>
 
-        <section class="work-section">
-            <h2 class="work-section-heading">My Recent Works</h2>
+        <section class="work-section" id="portfolio">
+            <h2 class="work-section-heading"><span>My Recent Works</span></h2>
             <div class="grid-wrapper">
                 <div class="project1">
                     <img src="img/firstproject-img.png" alt="sample image" class="project-img">
-                    <h3 class="project-name">Multi-Post Stories</h3>
-                    <p class="project-description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a standard dummy text.</p>
-                    <ul class="project-lang">
-                        <li>css</li>
-                        <li>html</li>
-                        <li>bootstrap</li>
-                        <li>Ruby</li>
-                    </ul>
-                    <button type="button" class="half-btn">See Project</button>
+                    <div class="project-content">
+                        <h3 class="project-name">Multi-Post Stories</h3>
+                        <p class="project-description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a standard dummy text.</p>
+                        <ul class="project-lang">
+                            <li>css</li>
+                            <li>html</li>
+                            <li>bootstrap</li>
+                            <li>Ruby</li>
+                        </ul>
+                        <button type="button" class="half-btn">See Project</button>
+                    </div>
 
                 </div>
                 <div class="project2 project-sample">
@@ -123,7 +134,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-me-section">
+        <section class="about-me-section" id="about">
             <div class="grid-wrapper">
                 <div class="aboutme">
                     <h2 class="title">About Me</h2>
@@ -133,7 +144,9 @@
                     </p>
                     <button type="button" class="resume">Get My Resume</button>
                 </div>
+                
                 <div class="skill-set">
+                    <hr>
                     <ul>
                         <li class="category lang">Language
                             <ul class="sublist">
@@ -165,7 +178,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact-section">
+        <section class="contact-section" id="contact">
             <h3>
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
             </h3>
@@ -186,7 +199,7 @@
             
         </section>
         <footer class="footer-section">
-            <hr>
+            <hr class="divider">
             <ul class="social">
                 <li><a href="#" class="social-link fa fa-github"></a></li>
                 <li><a href="#" class="social-link fa fa-linkedin"></a></li>
