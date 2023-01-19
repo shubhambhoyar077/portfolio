@@ -459,34 +459,6 @@ body {
   }
 
   /* ---Intro--- */
-  .intro-section .intro-name {
-    margin: 0;
-    font-family: 'Crete Round', sans-serif;
-    font-style: normal;
-    color: #F55800;
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 82px;
-  }
-  
-  .intro-section .profession {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-size: 32px;
-    line-height: 44px;
-    color: #FFFFFF;
-  }
-  
-  .intro-section .about {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    color: #F4F5F7;
-  }
-
   .intro-section {
     background-image: url("../img/desktopbg.png");
     background-size: contain;
@@ -563,6 +535,33 @@ body {
 }
 
 @media all and (min-width: 1340px) {
+  .intro-section .intro-name {
+    margin: 0;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    color: #F55800;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 82px;
+  }
+  
+  .intro-section .profession {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+  }
+  
+  .intro-section .about {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #F4F5F7;
+  }
   .intro-section {
     flex-direction: row;
     align-items: center;
@@ -591,6 +590,31 @@ body {
     padding-left: calc(5% - 24px);
   }
 
+  .work-section .project-description {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 12px 0;
+  }
+  
+  .work-section .project-name {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    margin: 0;
+  }
+  
+  .work-section .work-section-heading {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+  }
+
   .work-section .project1 {
     grid-area: 1/ span 3;
   }
@@ -616,5 +640,20 @@ body {
   .contact-section .contact-form {
     flex: 2;
     padding-left: 40px;
+  }
+
+  .work-section .project-sample .full-btn{
+    display: none;
+  }
+  .work-section .project2 .full-btn{
+    display: inline;
+
+  }
+  .work-section .project2{
+    background-image: url("../img/project2.png");
+    border: 2px solid black;
+  }
+  .work-section .project2 .content-wrapper{
+    display: none;
   }
 }
