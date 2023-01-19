@@ -539,29 +539,30 @@ body {
     margin: 0;
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
-    color: #F55800;
+    color: #f55800;
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
   }
-  
+
   .intro-section .profession {
     margin: 0;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-size: 32px;
     line-height: 44px;
-    color: #FFFFFF;
+    color: #fff;
   }
-  
+
   .intro-section .about {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    color: #F4F5F7;
+    color: #f4f5f7;
   }
+
   .intro-section {
     flex-direction: row;
     align-items: center;
@@ -598,7 +599,7 @@ body {
     line-height: 28px;
     margin: 12px 0;
   }
-  
+
   .work-section .project-name {
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
@@ -607,7 +608,7 @@ body {
     line-height: 52px;
     margin: 0;
   }
-  
+
   .work-section .work-section-heading {
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
@@ -623,18 +624,20 @@ body {
     width: 100%;
     height: 450px;
   }
+
   .work-section .grid-wrapper {
     /* grid-template-rows: 75vh; */
     column-gap: 8%;
   }
+
   .about-me-section .grid-wrapper {
     grid-template-rows: 75vh;
   }
+
   .about-me-section {
     background-size: 85%;
     background-position: top -100px right;
   }
- 
 
   .contact-section {
     flex-direction: row;
@@ -644,35 +647,38 @@ body {
 
   .contact-section h3 {
     flex: 1;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
     color: #262626;
-    text-align:start;
+    text-align: start;
   }
 
   .contact-section .contact-form {
     flex: 1.2;
     padding-left: 40px;
   }
+
   .contact-section .contact-form .con-btn {
     align-items: flex-start;
   }
 
-  .work-section .project-sample .full-btn{
+  .work-section .project-sample .full-btn {
     display: none;
   }
-  .work-section .project2 .full-btn{
-    display: inline;
 
+  .work-section .project2 .full-btn {
+    display: inline;
   }
-  .work-section .project2{
+
+  .work-section .project2 {
     background-image: url("../img/project2.png");
     border: 2px solid black;
   }
-  .work-section .project2 .content-wrapper{
+
+  .work-section .project2 .content-wrapper {
     display: none;
   }
 
@@ -681,20 +687,20 @@ body {
   }
 
   .about-me-section .title {
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
-    color: #F55800;
+    color: #f55800;
   }
-  
+
   .about-me-section .summary {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    color: #F4F5F7;
+    color: #f4f5f7;
   }
 }
