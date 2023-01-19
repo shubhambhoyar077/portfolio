@@ -620,16 +620,21 @@ body {
   }
 
   .work-section .project-sample {
-    width: 369px;
-    height: 435px;
+    width: 100%;
+    height: 450px;
+  }
+  .work-section .grid-wrapper {
+    /* grid-template-rows: 75vh; */
+    column-gap: 8%;
+  }
+  .about-me-section .grid-wrapper {
+    grid-template-rows: 75vh;
   }
   .about-me-section {
     background-size: 85%;
     background-position: top -100px right;
   }
-  .about-me-section .grid-wrapper {
-    grid-template-rows: 75vh;
-  }
+ 
 
   .contact-section {
     flex-direction: row;
