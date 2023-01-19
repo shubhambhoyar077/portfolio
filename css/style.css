@@ -459,6 +459,34 @@ body {
   }
 
   /* ---Intro--- */
+  .intro-section .intro-name {
+    margin: 0;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    color: #F55800;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 82px;
+  }
+  
+  .intro-section .profession {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+  }
+  
+  .intro-section .about {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #F4F5F7;
+  }
+
   .intro-section {
     background-image: url("../img/desktopbg.png");
     background-size: contain;
