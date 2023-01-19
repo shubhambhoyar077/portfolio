@@ -156,6 +156,7 @@ body {
   background-color: #ff6b00;
   border: none;
   color: white;
+  transition-duration: 1s;
 }
 
 .contact-section .contact-form button {
@@ -180,6 +181,7 @@ body {
   background-color: #ff6b00;
   border: none;
   color: white;
+  transition-duration: 1s;
 }
 
 .work-section .project-sample .full-btn,
