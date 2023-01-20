@@ -71,7 +71,6 @@ body {
   font-size: 24px;
   color: #fff5e1;
 }
-
 .intro-section .about {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -301,6 +300,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
+  transition-duration: 1s;
 }
 
 .about-me-section .resume:hover {
@@ -554,7 +554,26 @@ body {
     font-size: 32px;
     line-height: 44px;
     color: #fff;
+    /* animation */
+    display: inline-block;
+    border-right: 5px solid #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewrt 3s steps(30, end),
+                blinker 0.5s forwards infinite;
   }
+
+  @keyframes typewrt{
+    from{width: 0;}
+    to{width: 70%;}
+  }
+
+  @keyframes blinker{
+    0%{border-color: transparent;}
+    50%{border-color: #fff;}
+    100%{border-color: transparent;}
+  }
+
 
   .intro-section .about {
     font-family: 'Inter', sans-serif;
