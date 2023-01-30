@@ -48,16 +48,19 @@ body {
 .nav-bar .mobile-menu{
   background-color: #3C3A39;
   height: 100vh;
-  padding: 24px 24px;
+  padding: 12px 7%;
 }
 
 .disable{
   display: none;
 }
-.nav-bar .mobile-menu .close-menu{
+.nav-bar .mobile-menu div{
   text-align: end;
   color: #67798E;
   font-size: 24px;
+  
+}
+.nav-bar .mobile-menu .close-menu{
   cursor: pointer;
 }
 .nav-bar .mobile-menu .close-menu:hover{
@@ -69,7 +72,7 @@ body {
   flex-direction: column;
 }
 .nav-bar .mobile-menu .nav-links li{
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 }
 
 .nav-bar .mobile-menu .nav-links .nav-item{
@@ -81,10 +84,9 @@ body {
   line-height: 44px;
   color: #FFF5E1;
   border-bottom: 1px solid #6F6C6B;
-  padding: 15px;
+  padding: 12px 0;
   display: block;
   width: 100%;
- 
 }
 /* main body css */
 .intro-section {
@@ -495,6 +497,9 @@ body {
 }
 
 @media all and (min-width: 768px) {
+  .nav-bar .menu-bar{
+    display: block;
+  }
   .nav-bar .open-menu {
     display: flex;
   }
@@ -506,6 +511,7 @@ body {
   .nav-bar .toggle-menu {
     display: none;
   }
+
 
   /* ---Intro--- */
   .intro-section {
