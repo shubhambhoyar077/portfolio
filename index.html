@@ -11,21 +11,12 @@
 <body>
     <header>
         <nav class="nav-bar">
-            <div class="nav-menu" id="nav-menu">
-                <div class="nav-close" id="nav-close">
-                  <img src="./images/close.png" alt="close menu">
-                  
-                </div>
-                <div class="nav-links">
-                  <a class="nav-item" href="#work-section">Portfolio</a>
-                  <a class="nav-item" href="#about-me">About</a>
-                  <a class="nav-item" href="#contact">Contact</a>
-                </div>
-              </div>
+            <div class="menu-bar">
             <ul>
                 <li class="nav-item name">Shubham Bhoyar</li>
                 
                 <li class="nav-item toggle-menu menu"><a class="social-link fa fa-bars"></a></li>
+                
                 <div class="open-menu">
                     <li class="nav-item menu"><a href="#portfolio" class="social-link">Portfolio</a></li>
                     <li class="nav-item menu"><a href="#about" class="social-link">About</a></li>
@@ -33,6 +24,15 @@
                     <li class="nav-item menu"><a class="social-link fa fa-envelope"></a></li>
                 </div>
             </ul>
+        </div>
+            <div class="mobile-menu toggle-menu disable">
+                <div class="close-menu"><a class="fa fa-close"></a></div>
+                <ul class="nav-links">
+                    <li><a class="nav-item" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-item" href="#about">About</a></li>
+                    <li><a class="nav-item" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main class="main-area">
@@ -221,6 +221,6 @@
         </footer>
     </main>
 
-    
+    <script src="./js/script.js"></script>
 </body>
 </html>
