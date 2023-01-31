@@ -521,15 +521,20 @@ body {
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 0 5%;
+  padding: 5% 5%;
   display: flex;
   align-items: center;
+  justify-content: center;
   backdrop-filter: blur(2px);
 }
 
 .model .model-container {
   background-color: white;
   padding: 5% 5%;
+  /* margin: 5% 5%; */
+  width: 90%;
+  height: 90%;
+  overflow-y: auto;
 }
 
 .model .model-container .project-img {
