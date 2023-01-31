@@ -57,3 +57,53 @@ projectsInfo.project1 = {
   took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, \
   but also the leap into electronic typesetting, remaining essent",
 }
+projectsInfo.project2 = {
+  projectName: "Multi-Post Stories",
+  projectLang: ['html', 'css', 'Ruby on Rails'],
+  projectImgSrc: "./img/proimg.png",
+  projectImgAlt: "project image with 10",
+  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. \
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer \
+  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, \
+  but also the leap into electronic typesetting, remaining essent",
+}
+projectsInfo.project3 = {
+  projectName: "Multi-Post Stories",
+  projectLang: ['html', 'css', 'Ruby on Rails'],
+  projectImgSrc: "./img/proimg.png",
+  projectImgAlt: "project image with 10",
+  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. \
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer \
+  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, \
+  but also the leap into electronic typesetting, remaining essent",
+}
+projectsInfo.project4 = {
+  projectName: "Multi-Post Stories",
+  projectLang: ['html', 'css', 'Ruby on Rails'],
+  projectImgSrc: "./img/proimg.png",
+  projectImgAlt: "project image with 10",
+  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. \
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer \
+  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, \
+  but also the leap into electronic typesetting, remaining essent",
+}
+projectsInfo.project5 = {
+  projectName: "Multi-Post Stories",
+  projectLang: ['html', 'css', 'Ruby on Rails'],
+  projectImgSrc: "./img/proimg.png",
+  projectImgAlt: "project image with 10",
+  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. \
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer \
+  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, \
+  but also the leap into electronic typesetting, remaining essent",
+}
+projectsInfo.project6 = {
+  projectName: "Multi-Post Stories",
+  projectLang: ['html', 'css', 'Ruby on Rails'],
+  projectImgSrc: "./img/proimg.png",
+  projectImgAlt: "project image with 10",
+  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. \
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer \
+  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, \
+  but also the leap into electronic typesetting, remaining essent",
+}
