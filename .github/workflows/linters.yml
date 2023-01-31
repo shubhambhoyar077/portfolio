@@ -1,3 +1,39 @@
+
+Skip to content
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+@shubhambhoyar077
+microverseinc /
+linters-config
+Public
+
+Fork your own copy of microverseinc/linters-config
+
+Code
+Issues 29
+Pull requests 6
+Actions
+Projects
+Security
+
+    Insights
+
+linters-config/html-css-js/.github/workflows/linters.yml
+@bellom
+bellom Update ruby and ubuntu version
+Latest commit fb6e3ef Aug 22, 2022
+History
+6 contributors
+@SpaYco
+@sinansevgi
+@Meltrust
+@MacCrazyman
+@nidalaa
+@bellom
+70 lines (67 sloc) 2.43 KB
 name: Linters
 
 on: pull_request
@@ -29,7 +65,7 @@ jobs:
       - name: Setup Webhint
         run: |
           npm install --save-dev hint@7.x
-          [ -f .hintrc ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.hintrc
+          [ -f .hintrc ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.hintrc
       - name: Webhint Report
         run: npx hint .
   stylelint:
@@ -43,9 +79,23 @@ jobs:
       - name: Setup Stylelint
         run: |
           npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-          [ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css/.stylelintrc.json
+          [ -f .stylelintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.stylelintrc.json
       - name: Stylelint Report
         run: npx stylelint "**/*.{css,scss}"
+  eslint:
+    name: ESLint
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - name: Setup ESLint
+        run: |
+          npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+          [ -f .eslintrc.json ] || wget https://raw.githubusercontent.com/microverseinc/linters-config/master/html-css-js/.eslintrc.json
+      - name: ESLint Report
+        run: npx eslint .
   nodechecker:
     name: node_modules checker
     runs-on: ubuntu-22.04
@@ -54,3 +104,20 @@ jobs:
       - name: Check node_modules existence
         run: |
           if [ -d "node_modules/" ]; then echo -e "\e[1;31mThe node_modules/ folder was pushed to the repo. Please remove it from the GitHub repository and try again."; echo -e "\e[1;32mYou can set up a .gitignore file with this folder included on it to prevent this from happening in the future." && exit 1; fi
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+
+    Terms
+    Privacy
+    Security
+    Status
+    Docs
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
+linters-config/linters.yml at master · microverseinc/linters-config

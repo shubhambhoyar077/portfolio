@@ -16,105 +16,158 @@ navLinks.addEventListener('click', (e) => {
     toggleMenu();
   }
 });
+// -----------Dynamic projwct section----------
+
+const projectsInfo = [];
+const firstProject = document.querySelector('.work-section .project1');
+const projectCards = document.querySelectorAll('.work-section .project-sample');
+
+projectsInfo.push({
+  projectName: 'Multi-Post Stories',
+  projectLang: ['html', 'css', 'bootstrap', 'Ruby'],
+  projectImgSrc: './img/firstproject-img.png',
+  projectImgAlt: 'project image with 10',
+  featureImg: './img/proimg.png',
+  projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+  seeLive: '#',
+  seeSource: '#',
+});
+projectsInfo.push({
+  projectName: 'Profesional Art Printing Data',
+  projectLang: ['html', 'bootstrap', 'Ruby'],
+  projectImgSrc: './img/project-bag.png',
+  projectImgAlt: 'project image with 10',
+  featureImg: './img/proimg.png',
+  projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+  seeLive: '#',
+  seeSource: '#',
+});
+projectsInfo.push({
+  projectName: 'Profesional Art Printing Data',
+  projectLang: ['html', 'bootstrap', 'Ruby'],
+  projectImgSrc: './img/project-bag.png',
+  projectImgAlt: 'project image with 10',
+  featureImg: './img/proimg.png',
+  projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+  seeLive: '#',
+  seeSource: '#',
+});
+projectsInfo.push({
+  projectName: 'Profesional Art Printing Data',
+  projectLang: ['html', 'bootstrap', 'Ruby'],
+  projectImgSrc: './img/project-bag.png',
+  projectImgAlt: 'project image with 10',
+  featureImg: './img/proimg.png',
+  projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+  seeLive: '#',
+  seeSource: '#',
+});
+projectsInfo.push({
+  projectName: 'Profesional Art Printing Data',
+  projectLang: ['html', 'bootstrap', 'Ruby'],
+  projectImgSrc: './img/project-bag.png',
+  projectImgAlt: 'project image with 10',
+  featureImg: './img/proimg.png',
+  projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+  seeLive: '#',
+  seeSource: '#',
+});
+projectsInfo.push({
+  projectName: 'Profesional Art Printing Data',
+  projectLang: ['html', 'bootstrap', 'Ruby'],
+  projectImgSrc: './img/project-bag.png',
+  projectImgAlt: 'project image with 10',
+  featureImg: './img/proimg.png',
+  projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+  seeLive: '#',
+  seeSource: '#',
+});
+projectsInfo.push({
+  projectName: 'Profesional Art Printing Data',
+  projectLang: ['html', 'bootstrap', 'Ruby'],
+  projectImgSrc: './img/project-bag.png',
+  projectImgAlt: 'project image with 10',
+  featureImg: './img/proimg.png',
+  projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+  seeLive: '#',
+  seeSource: '#',
+});
+
+function addProjectLang(langList) {
+  // const prolangs = model.querySelector('.project-lang');
+  let prolangs = '';
+  // prolangs.replaceChildren();
+  langList.forEach((lang) => {
+    // const li = document.createElement('li');
+    // li.textContent = lang;
+    prolangs += `
+          <li>${lang}</li>`;
+  });
+  return prolangs;
+}
+
+function createProjectCards() {
+  projectsInfo.forEach((project, index) => {
+    if (index === 0) {
+      firstProject.innerHTML = `
+          <img src=${project.projectImgSrc} alt="sample image" class="project-img">
+          <div class="project-content">
+              <h3 class="project-name">${project.projectName}</h3>
+              <p class="project-description">${project.projectshortDescription}</p>
+              <ul class="project-lang">
+                  ${addProjectLang(project.projectLang)}
+              </ul>
+              <button type="button" class="half-btn" id="project${index}">See Project</button>
+            </div>`;
+    } else {
+      projectCards[index - 1].innerHTML = `
+            <div class="content-wrapper">
+                <h3 class="project-name">${project.projectName}</h3>
+                <p class="project-description">${project.projectshortDescription}</p>
+                <ul class="project-lang">
+                  ${addProjectLang(project.projectLang)}
+                </ul>
+            </div>
+            <button type="button" class="full-btn" id="project${index}">See Project</button>`;
+    }
+  });
+}
+
+createProjectCards();
 
 // -------------Model----------
 const project = document.querySelector('#portfolio .grid-wrapper');
 const modelWrapper = document.querySelector('.model-wrapper');
 const model = document.querySelector('.model');
 const closepopup = document.querySelector('.model .close-popup');
-const projectsInfo = {};
-
-const addProjectLang = (langList) => {
-  const prolangs = model.querySelector('.project-lang');
-  prolangs.replaceChildren();
-  langList.forEach((lang) => {
-    const li = document.createElement('li');
-    li.textContent = lang;
-    prolangs.appendChild(li);
-  });
-};
 
 function addProjectInfo(projectObj) {
   model.querySelector('.project-name').textContent = projectObj.projectName;
   model.querySelector('.project-description').textContent = projectObj.projectDescription;
-  model.querySelector('.project-img').src = projectObj.projectImgSrc;
+  model.querySelector('.project-img').src = projectObj.featureImg;
   model.querySelector('.project-img').alt = projectObj.projectImgAlt;
-  addProjectLang(projectObj.projectLang);
+  model.querySelector('.project-lang').innerHTML = `${addProjectLang(projectObj.projectLang)}`;
   model.querySelector('.model .see-live').href = projectObj.seeLive;
   model.querySelector('.model .see-source').href = projectObj.seeSource;
 }
 
 project.addEventListener('click', (e) => {
   if (e.target.id) {
-    modelWrapper.classList.toggle('disable');
-    addProjectInfo(projectsInfo[e.target.id]);
+    const index = e.target.id.replace('project', '');
+    if (projectsInfo[index]) {
+      modelWrapper.classList.toggle('disable');
+      addProjectInfo(projectsInfo[index]);
+    }
   }
 });
 
 closepopup.addEventListener('click', () => {
   modelWrapper.classList.toggle('disable');
 });
-
-projectsInfo.project1 = {
-  projectName: 'Multi-Post Stories',
-  projectLang: ['html', 'css', 'Ruby on Rails'],
-  projectImgSrc: './img/proimg.png',
-  projectImgAlt: 'project image with 10',
-  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  seeLive: '#',
-  seeSource: '#',
-};
-projectsInfo.project2 = {
-  projectName: 'Profesional Art Printing Data 1',
-  projectLang: ['html', 'bootstrap', 'Ruby'],
-  projectImgSrc: './img/proimg.png',
-  projectImgAlt: 'project image with 10',
-  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  seeLive: '#',
-  seeSource: '#',
-};
-projectsInfo.project3 = {
-  projectName: 'Profesional Art Printing Data 2',
-  projectLang: ['html', 'bootstrap', 'Ruby'],
-  projectImgSrc: './img/proimg.png',
-  projectImgAlt: 'project image with 10',
-  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  seeLive: '#',
-  seeSource: '#',
-};
-projectsInfo.project4 = {
-  projectName: 'Profesional Art Printing Data 3',
-  projectLang: ['html', 'bootstrap', 'Ruby'],
-  projectImgSrc: './img/proimg.png',
-  projectImgAlt: 'project image with 10',
-  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  seeLive: '#',
-  seeSource: '#',
-};
-projectsInfo.project5 = {
-  projectName: 'Profesional Art Printing Data 4',
-  projectLang: ['html', 'bootstrap', 'Ruby'],
-  projectImgSrc: './img/proimg.png',
-  projectImgAlt: 'project image with 10',
-  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  seeLive: '#',
-  seeSource: '#',
-};
-projectsInfo.project6 = {
-  projectName: 'Profesional Art Printing Data 5',
-  projectLang: ['html', 'bootstrap', 'Ruby'],
-  projectImgSrc: './img/proimg.png',
-  projectImgAlt: 'project image with 10',
-  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  seeLive: '#',
-  seeSource: '#',
-};
-projectsInfo.project7 = {
-  projectName: 'Profesional Art Printing Data 6',
-  projectLang: ['html', 'bootstrap', 'Ruby'],
-  projectImgSrc: './img/proimg.png',
-  projectImgAlt: 'project image with 10',
-  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  seeLive: '#',
-  seeSource: '#',
-};
