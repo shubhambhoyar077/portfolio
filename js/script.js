@@ -16,3 +16,44 @@ navLinks.addEventListener('click', (e) => {
     toggleMenu();
   }
 });
+
+// -------------Model----------
+const project = document.querySelector('#portfolio .grid-wrapper');
+const modelWrapper = document.querySelector('.model-wrapper');
+const model = document.querySelector('.model');
+const projectsInfo = {};
+project.addEventListener('click', (e) => {
+  if(e.target.id){
+    modelWrapper.classList.toggle('disable');
+    addProjectInfo(projectsInfo[e.target.id]);
+  }
+});
+
+function addProjectInfo(projectObj){
+  model.querySelector('.project-name').textContent = projectObj.projectName;
+  model.querySelector('.project-description').textContent = projectObj.projectDescription;
+  model.querySelector('.project-img').src = projectObj.projectImgSrc;
+  model.querySelector('.project-img').alt = projectObj.projectImgAlt;
+  addProjectLang(projectObj.projectLang);
+
+}
+
+let addProjectLang = (langList) => {
+  const prolangs = model.querySelector('.project-lang');
+  for(let lang in langList){
+    const li = document.createElement('li');
+    li.textContent = langList[lang];
+    prolangs.appendChild(li);
+  }
+}
+
+projectsInfo.project1 = {
+  projectName: "Multi-Post Stories",
+  projectLang: ['html', 'css', 'Ruby on Rails'],
+  projectImgSrc: "./img/proimg.png",
+  projectImgAlt: "project image with 10",
+  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. \
+  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer \
+  took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, \
+  but also the leap into electronic typesetting, remaining essent",
+}
