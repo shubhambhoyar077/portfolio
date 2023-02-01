@@ -171,3 +171,17 @@ project.addEventListener('click', (e) => {
 closepopup.addEventListener('click', () => {
   modelWrapper.classList.toggle('disable');
 });
+
+// -------------Form----------
+const form = document.querySelector('form');
+const email = document.querySelector('#email');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (email.value=== email.value.toLowerCase()) {
+    form.submit();
+  } else {
+    email.value = '';
+    email.placeholder = 'Please enter a lowercase email';
+  }
+});
