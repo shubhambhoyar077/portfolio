@@ -486,6 +486,10 @@ body {
   align-items: center;
 }
 
+.contact-section .contact-form .message{
+  color: red;
+}
+
 /* ---Contact section---end */
 
 .footer-section {
