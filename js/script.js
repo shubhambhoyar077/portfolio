@@ -188,7 +188,7 @@ form.addEventListener('submit', (e) => {
 });
 
 // ---------Storage-------
-function fillData() {
+function restoreData() {
   const formData = JSON.parse(localStorage.getItem('formData'));
   form.elements.name.value = formData.name;
   form.elements.mail.value = formData.email;
@@ -202,7 +202,7 @@ function updateLocalStorage() {
     msg: form.elements.msg.value,
   };
   localStorage.setItem('formData', JSON.stringify(formData));
-  fillData();
+  restoreData();
 }
 
 form.elements.name.onchange = updateLocalStorage;
@@ -212,5 +212,5 @@ form.elements.msg.onchange = updateLocalStorage;
 if (!localStorage.getItem('formData')) {
   updateLocalStorage();
 } else {
-  fillData();
+  restoreData();
 }
