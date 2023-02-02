@@ -186,3 +186,31 @@ form.addEventListener('submit', (e) => {
     msg.textContent = 'Please enter a lowercase email';
   }
 });
+
+// ---------Storage-------
+function restoreData() {
+  const formData = JSON.parse(localStorage.getItem('formData'));
+  form.elements.name.value = formData.name;
+  form.elements.mail.value = formData.email;
+  form.elements.msg.value = formData.msg;
+}
+
+function updateLocalStorage() {
+  const formData = {
+    name: form.elements.name.value,
+    email: form.elements.mail.value,
+    msg: form.elements.msg.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+  restoreData();
+}
+
+form.elements.name.onchange = updateLocalStorage;
+form.elements.mail.onchange = updateLocalStorage;
+form.elements.msg.onchange = updateLocalStorage;
+
+if (!localStorage.getItem('formData')) {
+  updateLocalStorage();
+} else {
+  restoreData();
+}
