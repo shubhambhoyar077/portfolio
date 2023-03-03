@@ -23,20 +23,42 @@ const firstProject = document.querySelector('.work-section .project1');
 const projectCards = document.querySelectorAll('.work-section .project-sample');
 
 projectsInfo.push({
-  projectName: 'Multi-Post Stories',
-  projectLang: ['html', 'css', 'bootstrap', 'Ruby'],
-  projectImgSrc: './img/firstproject-img.png',
-  projectImgAlt: 'project image with 10',
-  featureImg: './img/proimg.png',
+  projectName: 'Game Developer Conference Capstone',
+  projectLang: ['html', 'css', 'javascript'],
+  projectImgSrc: './img/gdc_capstone.png',
+  projectImgAlt: 'game developer capstone project',
+  featureImg: './img/gdc_capstone.png',
   projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
   projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  seeLive: '#',
-  seeSource: '#',
+  seeLive: 'https://shubhambhoyar077.github.io/gdc_capstone/',
+  seeSource: 'https://github.com/shubhambhoyar077/gdc_capstone',
+});
+projectsInfo.push({
+  projectName: 'To Do List',
+  projectLang: ['html', 'bootstrap', 'JavaScript'],
+  projectImgSrc: './img/todolist.png',
+  projectImgAlt: 'ToDo list project',
+  featureImg: './img/todolist.png',
+  projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+  seeLive: 'https://shubhambhoyar077.github.io/to-do-list/dist/',
+  seeSource: 'https://github.com/shubhambhoyar077/to-do-list',
+});
+projectsInfo.push({
+  projectName: 'Awesome Book',
+  projectLang: ['html', 'bootstrap', 'JavaScript'],
+  projectImgSrc: './img/bookstore.png',
+  projectImgAlt: 'Awesome book project',
+  featureImg: './img/bookstore.png',
+  projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+  seeLive: 'https://shubhambhoyar077.github.io/awesome-book/',
+  seeSource: 'https://github.com/shubhambhoyar077/awesome-book',
 });
 projectsInfo.push({
   projectName: 'Profesional Art Printing Data',
   projectLang: ['html', 'bootstrap', 'Ruby'],
-  projectImgSrc: './img/project-bag.png',
+  projectImgSrc: './img/project2.png',
   projectImgAlt: 'project image with 10',
   featureImg: './img/proimg.png',
   projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
@@ -47,7 +69,7 @@ projectsInfo.push({
 projectsInfo.push({
   projectName: 'Profesional Art Printing Data',
   projectLang: ['html', 'bootstrap', 'Ruby'],
-  projectImgSrc: './img/project-bag.png',
+  projectImgSrc: './img/project2.png',
   projectImgAlt: 'project image with 10',
   featureImg: './img/proimg.png',
   projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
@@ -58,7 +80,7 @@ projectsInfo.push({
 projectsInfo.push({
   projectName: 'Profesional Art Printing Data',
   projectLang: ['html', 'bootstrap', 'Ruby'],
-  projectImgSrc: './img/project-bag.png',
+  projectImgSrc: './img/project2.png',
   projectImgAlt: 'project image with 10',
   featureImg: './img/proimg.png',
   projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
@@ -69,29 +91,7 @@ projectsInfo.push({
 projectsInfo.push({
   projectName: 'Profesional Art Printing Data',
   projectLang: ['html', 'bootstrap', 'Ruby'],
-  projectImgSrc: './img/project-bag.png',
-  projectImgAlt: 'project image with 10',
-  featureImg: './img/proimg.png',
-  projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  seeLive: '#',
-  seeSource: '#',
-});
-projectsInfo.push({
-  projectName: 'Profesional Art Printing Data',
-  projectLang: ['html', 'bootstrap', 'Ruby'],
-  projectImgSrc: './img/project-bag.png',
-  projectImgAlt: 'project image with 10',
-  featureImg: './img/proimg.png',
-  projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  seeLive: '#',
-  seeSource: '#',
-});
-projectsInfo.push({
-  projectName: 'Profesional Art Printing Data',
-  projectLang: ['html', 'bootstrap', 'Ruby'],
-  projectImgSrc: './img/project-bag.png',
+  projectImgSrc: './img/project2.png',
   projectImgAlt: 'project image with 10',
   featureImg: './img/proimg.png',
   projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
@@ -127,6 +127,7 @@ function createProjectCards() {
               <button type="button" class="half-btn" id="project${index}">See Project</button>
             </div>`;
     } else {
+      projectCards[index - 1].style.backgroundImage = "url("+project.projectImgSrc+")"; 
       projectCards[index - 1].innerHTML = `
             <div class="content-wrapper">
                 <h3 class="project-name">${project.projectName}</h3>
