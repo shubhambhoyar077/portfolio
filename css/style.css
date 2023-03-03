@@ -243,6 +243,7 @@ body {
   inset: 0;
 
   /* animation: shift 1s; */
+
   /* transition: opacity 0.3s linear; */
 }
 
@@ -861,6 +862,7 @@ body {
   .work-section .project-sample {
     width: 100%;
     height: 450px;
+
     /* background-image: url("../img/project2.png"); */
     border: 2px solid black;
     position: relative;
