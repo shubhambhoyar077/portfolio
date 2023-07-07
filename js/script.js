@@ -23,13 +23,67 @@ const firstProject = document.querySelector('.work-section .project1');
 const projectCards = document.querySelectorAll('.work-section .project-sample');
 
 projectsInfo.push({
+  projectName: 'Recipe App',
+  projectLang: ['Ruby on Rails', 'bootstrap', 'Postgres'],
+  projectImgSrc: './img/recipe1.png',
+  projectImgAlt: 'Recipe',
+  featureImg: './img/recipe2.png',
+  projectshortDescription:
+    'The Recipe app keeps track of all your recipes, ingredients, and inventory. ',
+  projectDescription:
+    'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. ',
+  seeLive: '#',
+  seeSource: 'https://github.com/shubhambhoyar077/recipe-app',
+});
+projectsInfo.push({
+  projectName: 'SavEarly:- Budget App',
+  projectLang: ['Ruby on Rails', 'bootstrap', 'Postgres'],
+  projectImgSrc: './img/categorysave.png',
+  projectImgAlt: 'SavEarly',
+  featureImg: './img/trasave.png',
+  projectshortDescription:
+    'SavEarly is a web app that helps users categorize and manage their transactions for easy expense tracking. Stay organized and gain insights into your spending habits with this user-friendly tool.',
+  projectDescription:
+    'SavEarly is a web app that helps users categorize and manage their transactions for easy expense tracking. Stay organized and gain insights into your spending habits with this user-friendly tool.',
+  seeLive: 'https://savearly.onrender.com/',
+  seeSource: 'https://github.com/shubhambhoyar077/budget-app',
+});
+projectsInfo.push({
+  projectName: 'Crypto Currency ',
+  projectLang: ['React', 'CSS', 'API'],
+  projectImgSrc: './img/crypto1.png',
+  projectImgAlt: 'Crypto',
+  featureImg: './img/crypto2.png',
+  projectshortDescription:
+    'Crypto is a SPA for users to check the details of top 20 cryptocurrencies. ',
+  projectDescription:
+    'Crypto is a SPA for users to check the details of top 20 cryptocurrencies. ',
+  seeLive: 'https://crypto-j3cj.onrender.com/',
+  seeSource: 'https://github.com/shubhambhoyar077/crypto-currency',
+});
+projectsInfo.push({
+  projectName: 'Space',
+  projectLang: ['React', 'CSS', 'API'],
+  projectImgSrc: './img/space.png',
+  projectImgAlt: 'Space Hub',
+  featureImg: './img/space.png',
+  projectshortDescription:
+    'Space Hub is a webapp built with React and Redux, it fetches data from SpaceX API and Displays it. ',
+  projectDescription:
+    'Space Hub is a webapp built with React and Redux, it fetches data from SpaceX API and Displays it. ',
+  seeLive: 'https://space-hub-osb.netlify.app/',
+  seeSource: 'https://github.com/shubhambhoyar077/React_Group_Project',
+});
+projectsInfo.push({
   projectName: 'Game Developer Conference Capstone',
   projectLang: ['html', 'css', 'javascript'],
   projectImgSrc: './img/gdc_capstone.png',
   projectImgAlt: 'game developer capstone project',
   featureImg: './img/gdc_capstone.png',
-  projectshortDescription: 'Game Developer Conference is a first capstone project of Microverse',
-  projectDescription: 'This capstone project is base on real time application and topic for this project is Game Developer Conference 2023',
+  projectshortDescription:
+    'Game Developer Conference is a first capstone project of Microverse',
+  projectDescription:
+    'This capstone project is base on real time application and topic for this project is Game Developer Conference 2023',
   seeLive: 'https://shubhambhoyar077.github.io/gdc_capstone/',
   seeSource: 'https://github.com/shubhambhoyar077/gdc_capstone',
 });
@@ -40,7 +94,8 @@ projectsInfo.push({
   projectImgAlt: 'ToDo list project',
   featureImg: './img/todolist.png',
   projectshortDescription: 'Simple ToDo list to keep trak of your daily tasks ',
-  projectDescription: "'To-do list' is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack!",
+  projectDescription:
+    "'To-do list' is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You will build a simple website that allows for doing that, and you will do it using ES6 and Webpack!",
   seeLive: 'https://shubhambhoyar077.github.io/to-do-list/dist/',
   seeSource: 'https://github.com/shubhambhoyar077/to-do-list',
 });
@@ -51,53 +106,10 @@ projectsInfo.push({
   projectImgAlt: 'Awesome book project',
   featureImg: './img/bookstore.png',
   projectshortDescription: 'Awesome Book, Created using ES6 javascript.',
-  projectDescription: "'Awesome books' is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, I have learn how to manage data using JavaScript. Thanks to this my website will be more interactive. I also use a medium-fidelity wireframe to build the UI.",
+  projectDescription:
+    "'Awesome books' is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, I have learn how to manage data using JavaScript. Thanks to this my website will be more interactive. I also use a medium-fidelity wireframe to build the UI.",
   seeLive: 'https://shubhambhoyar077.github.io/awesome-book/',
   seeSource: 'https://github.com/shubhambhoyar077/awesome-book',
-});
-projectsInfo.push({
-  projectName: 'Profesional Art Printing Data',
-  projectLang: ['html', 'bootstrap', 'Ruby'],
-  projectImgSrc: './img/project2.png',
-  projectImgAlt: 'project image with 10',
-  featureImg: './img/proimg.png',
-  projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  seeLive: '#',
-  seeSource: '#',
-});
-projectsInfo.push({
-  projectName: 'Profesional Art Printing Data',
-  projectLang: ['html', 'bootstrap', 'Ruby'],
-  projectImgSrc: './img/project2.png',
-  projectImgAlt: 'project image with 10',
-  featureImg: './img/proimg.png',
-  projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  seeLive: '#',
-  seeSource: '#',
-});
-projectsInfo.push({
-  projectName: 'Profesional Art Printing Data',
-  projectLang: ['html', 'bootstrap', 'Ruby'],
-  projectImgSrc: './img/project2.png',
-  projectImgAlt: 'project image with 10',
-  featureImg: './img/proimg.png',
-  projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  seeLive: '#',
-  seeSource: '#',
-});
-projectsInfo.push({
-  projectName: 'Profesional Art Printing Data',
-  projectLang: ['html', 'bootstrap', 'Ruby'],
-  projectImgSrc: './img/project2.png',
-  projectImgAlt: 'project image with 10',
-  featureImg: './img/proimg.png',
-  projectshortDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-  projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-  seeLive: '#',
-  seeSource: '#',
 });
 
 function addProjectLang(langList) {
@@ -117,21 +129,29 @@ function createProjectCards() {
   projectsInfo.forEach((project, index) => {
     if (index === 0) {
       firstProject.innerHTML = `
-          <img src=${project.projectImgSrc} alt="sample image" class="project-img">
+          <img src=${
+  project.projectImgSrc
+} alt="sample image" class="project-img">
           <div class="project-content">
               <h3 class="project-name">${project.projectName}</h3>
-              <p class="project-description">${project.projectshortDescription}</p>
+              <p class="project-description">${
+  project.projectshortDescription
+}</p>
               <ul class="project-lang">
                   ${addProjectLang(project.projectLang)}
               </ul>
               <button type="button" class="half-btn" id="project${index}">See Project</button>
             </div>`;
     } else {
-      projectCards[index - 1].style.backgroundImage = `url(${project.projectImgSrc})`;
+      projectCards[
+        index - 1
+      ].style.backgroundImage = `url(${project.projectImgSrc})`;
       projectCards[index - 1].innerHTML = `
             <div class="content-wrapper">
                 <h3 class="project-name">${project.projectName}</h3>
-                <p class="project-description">${project.projectshortDescription}</p>
+                <p class="project-description">${
+  project.projectshortDescription
+}</p>
                 <ul class="project-lang">
                   ${addProjectLang(project.projectLang)}
                 </ul>
@@ -154,7 +174,9 @@ function addProjectInfo(projectObj) {
   model.querySelector('.project-description').textContent = projectObj.projectDescription;
   model.querySelector('.project-img').src = projectObj.featureImg;
   model.querySelector('.project-img').alt = projectObj.projectImgAlt;
-  model.querySelector('.project-lang').innerHTML = `${addProjectLang(projectObj.projectLang)}`;
+  model.querySelector('.project-lang').innerHTML = `${addProjectLang(
+    projectObj.projectLang,
+  )}`;
   model.querySelector('.model .see-live').href = projectObj.seeLive;
   model.querySelector('.model .see-source').href = projectObj.seeSource;
 }
