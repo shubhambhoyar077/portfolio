@@ -21,6 +21,7 @@ body {
   background-color: rgba(57, 58, 55, 0.9);
   padding: 12px 0;
 }
+
 .nav-bar ul {
   display: flex;
   margin: 0;
@@ -127,15 +128,16 @@ body {
 
 .intro-section::after {
   content: '';
-  background: linear-gradient(
-    to right,
-    rgba(57, 58, 55, 1),
-    rgba(57, 58, 55, 0.9) 50%,
-    rgba(57, 58, 55, 0.8) 60%,
-    rgba(57, 58, 55, 0.7) 70%,
-    rgba(57, 58, 55, 0.6) 80%,
-    rgba(57, 58, 55, 0.6)
-  );
+  background:
+    linear-gradient(
+      to right,
+      rgba(57, 58, 55, 1),
+      rgba(57, 58, 55, 0.9) 50%,
+      rgba(57, 58, 55, 0.8) 60%,
+      rgba(57, 58, 55, 0.7) 70%,
+      rgba(57, 58, 55, 0.6) 80%,
+      rgba(57, 58, 55, 0.6)
+    );
   position: absolute;
   z-index: -1;
   inset: 0;
@@ -171,6 +173,7 @@ body {
   from {
     width: 0;
   }
+
   to {
     width: 70%;
   }
@@ -180,9 +183,11 @@ body {
   0% {
     border-color: transparent;
   }
+
   50% {
     border-color: #fff;
   }
+
   100% {
     border-color: transparent;
   }
@@ -267,11 +272,6 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
-.work-section .project1 .project-img:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
 .work-section .project1 {
   display: flex;
   flex-direction: column;
@@ -308,11 +308,12 @@ body {
 
 .work-section .project-sample::after {
   content: '';
-  background: linear-gradient(
-    180.45deg,
-    rgba(38, 38, 38, 0) 0.75%,
-    rgba(38, 38, 38, 0.9) 61.94%
-  );
+  background:
+    linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    );
   position: absolute;
   z-index: -1;
   inset: 0;
@@ -411,15 +412,16 @@ body {
 
 .about-me-section::after {
   content: '';
-  background: linear-gradient(
-    to right,
-    rgba(57, 58, 55, 1),
-    rgba(57, 58, 55, 0.9) 50%,
-    rgba(57, 58, 55, 0.8) 60%,
-    rgba(57, 58, 55, 0.7) 70%,
-    rgba(57, 58, 55, 0.6) 80%,
-    rgba(57, 58, 55, 0.6)
-  );
+  background:
+    linear-gradient(
+      to right,
+      rgba(57, 58, 55, 1),
+      rgba(57, 58, 55, 0.9) 50%,
+      rgba(57, 58, 55, 0.8) 60%,
+      rgba(57, 58, 55, 0.7) 70%,
+      rgba(57, 58, 55, 0.6) 80%,
+      rgba(57, 58, 55, 0.6)
+    );
   position: absolute;
   z-index: -1;
   inset: 0;
@@ -687,6 +689,11 @@ body {
   text-decoration: none;
 }
 
+.work-section .project1 .project-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 @media all and (min-width: 768px) {
   .nav-bar .menu-bar {
     display: block;
@@ -877,6 +884,7 @@ body {
   .work-section .grid-wrapper {
     column-gap: 8%;
   }
+
   .contact-section {
     flex-direction: row;
     height: 75vh;
@@ -917,11 +925,12 @@ body {
 
   .work-section .project-sample::after {
     content: '';
-    background: linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
-    );
+    background:
+      linear-gradient(
+        180.45deg,
+        rgba(38, 38, 38, 0) 0.75%,
+        rgba(38, 38, 38, 0.9) 61.94%
+      );
     position: absolute;
     z-index: -1;
     inset: 0;
