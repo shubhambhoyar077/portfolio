@@ -30,10 +30,15 @@ body {
 
 .nav-bar .nav-item {
   color: white;
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
+  font-weight: 500;
   font-size: 18px;
   list-style: none;
+}
+
+.nav-bar .name {
+  font-weight: 700;
 }
 
 .nav-bar .nav-item a {
