@@ -22,7 +22,7 @@ body {
 
 .nav-bar .nav-item {
   color: white;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-style: normal;
   font-size: 18px;
   list-style: none;
@@ -104,9 +104,29 @@ body {
   padding: var(--common-padding);
   flex-direction: column;
   justify-content: center;
-  background-image: url("../img/Group.png");
+  background-image: url('https://source.unsplash.com/random/900x900/?abstract');
   background-repeat: no-repeat;
-  background-position: bottom -50px right;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  isolation: isolate;
+  /* background-position: bottom -50px right; */
+}
+
+.intro-section::after {
+  content: '';
+  background: linear-gradient(
+    to right,
+    rgba(57, 58, 55, 1),
+    rgba(57, 58, 55, 0.9) 50%,
+    rgba(57, 58, 55, 0.8) 60%,
+    rgba(57, 58, 55, 0.7) 70%,
+    rgba(57, 58, 55, 0.6) 80%,
+    rgba(57, 58, 55, 0.6)
+  );
+  position: absolute;
+  z-index: -1;
+  inset: 0;
 }
 
 /* main body content */
@@ -237,7 +257,11 @@ body {
 
 .work-section .project-sample::after {
   content: '';
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+  background: linear-gradient(
+    180.45deg,
+    rgba(38, 38, 38, 0) 0.75%,
+    rgba(38, 38, 38, 0.9) 61.94%
+  );
   position: absolute;
   z-index: -1;
   inset: 0;
@@ -331,7 +355,7 @@ body {
   padding: var(--common-padding);
   background-color: #1c1a19;
   color: white;
-  background-image: url("../img/aboutme-bag.png");
+  background-image: url('../img/aboutme-bag.png');
   background-repeat: no-repeat;
   background-position: right 70vh;
 }
@@ -416,15 +440,15 @@ body {
 }
 
 .about-me-section .skill-set .lang {
-  list-style-image: url("../img/Rectangle.png");
+  list-style-image: url('../img/Rectangle.png');
 }
 
 .about-me-section .skill-set .fram {
-  list-style-image: url("../img/sq.png");
+  list-style-image: url('../img/sq.png');
 }
 
 .about-me-section .skill-set .skills {
-  list-style-image: url("../img/ca.png");
+  list-style-image: url('../img/ca.png');
 }
 
 .about-me-section .skill-set .category {
@@ -606,11 +630,11 @@ body {
   }
 
   /* ---Intro--- */
-  .intro-section {
-    background-image: url("../img/desktopbg.png");
+  /* .intro-section {
+    background-image: url('../img/desktopbg.png');
     background-size: contain;
     background-position: center right;
-  }
+  } */
 
   .intro-section .start-intro {
     max-width: 50%;
@@ -633,7 +657,7 @@ body {
   }
 
   .work-section .project1 {
-    grid-area: 1/ span 2;
+    grid-area: 1 / span 2;
     flex-direction: row;
   }
 
@@ -648,7 +672,7 @@ body {
 
   /* ---about me--- */
   .about-me-section {
-    background-image: url("../img/aboutdskbg.png");
+    background-image: url('../img/aboutdskbg.png');
     background-size: contain;
     background-position: top 150px right;
   }
@@ -729,20 +753,28 @@ body {
     border-right: 5px solid #fff;
     overflow: hidden;
     white-space: nowrap;
-    animation:
-      typewrt 3s steps(30, end),
-      blinker 0.5s forwards infinite;
+    animation: typewrt 3s steps(30, end), blinker 0.5s forwards infinite;
   }
 
   @keyframes typewrt {
-    from { width: 0; }
-    to { width: 70%; }
+    from {
+      width: 0;
+    }
+    to {
+      width: 70%;
+    }
   }
 
   @keyframes blinker {
-    0% { border-color: transparent; }
-    50% { border-color: #fff; }
-    100% { border-color: transparent; }
+    0% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #fff;
+    }
+    100% {
+      border-color: transparent;
+    }
   }
 
   .intro-section .about {
@@ -808,7 +840,7 @@ body {
   }
 
   .work-section .project1 {
-    grid-area: 1/ span 3;
+    grid-area: 1 / span 3;
   }
 
   .work-section .grid-wrapper {
@@ -871,7 +903,11 @@ body {
 
   .work-section .project-sample::after {
     content: '';
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+    background: linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    );
     position: absolute;
     z-index: -1;
     inset: 0;
