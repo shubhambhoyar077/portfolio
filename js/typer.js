@@ -5,6 +5,7 @@ const professions = [
   'Full Stack Developer',
 ];
 let counter = 0;
+let intervalId;
 
 function changeProfession() {
   const professionElement = document.querySelector('#profession');
@@ -14,7 +15,7 @@ function changeProfession() {
     professionElement.classList.remove('typ-ani');
   }, 3000);
 
-  counter++;
+  counter += 1;
   if (counter === professions.length) {
     clearInterval(intervalId);
   }
@@ -22,4 +23,4 @@ function changeProfession() {
 
 changeProfession();
 
-const intervalId = setInterval(changeProfession, 4000);
+intervalId = setInterval(changeProfession, 4000);
