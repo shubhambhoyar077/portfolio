@@ -12,8 +12,17 @@ body {
 }
 
 /* nav-bar design as per microverse template 2 */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(57, 58, 55, 0.9);
+  padding: 12px 0;
+}
+
 .nav-bar ul {
-  background-color: #3c3a39;
   display: flex;
   margin: 0;
   justify-content: space-between;
@@ -22,10 +31,15 @@ body {
 
 .nav-bar .nav-item {
   color: white;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
+  font-weight: 500;
   font-size: 18px;
   list-style: none;
+}
+
+.nav-bar .name {
+  font-weight: 700;
 }
 
 .nav-bar .nav-item a {
@@ -99,14 +113,34 @@ body {
   color: white;
   background-color: #1c1a19;
   display: flex;
-  height: calc(100vh - 45px);
+  height: 100vh;
   margin: 0;
   padding: var(--common-padding);
   flex-direction: column;
   justify-content: center;
-  background-image: url("../img/Group.png");
+  background-image: url('https://source.unsplash.com/random/900x900/?abstract');
   background-repeat: no-repeat;
-  background-position: bottom -50px right;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  isolation: isolate;
+}
+
+.intro-section::after {
+  content: '';
+  background:
+    linear-gradient(
+      to right,
+      rgba(57, 58, 55, 1),
+      rgba(57, 58, 55, 0.9) 50%,
+      rgba(57, 58, 55, 0.8) 60%,
+      rgba(57, 58, 55, 0.7) 70%,
+      rgba(57, 58, 55, 0.6) 80%,
+      rgba(57, 58, 55, 0.6)
+    );
+  position: absolute;
+  z-index: -1;
+  inset: 0;
 }
 
 /* main body content */
@@ -123,7 +157,40 @@ body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 24px;
-  color: #fff5e1;
+  color: #fff;
+}
+
+.intro-section .typ-ani {
+  /* animation */
+  display: inline-block;
+  border-right: 5px solid #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewrt 3s steps(30, end), blinker 0.5s forwards infinite;
+}
+
+@keyframes typewrt {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes blinker {
+  0% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #fff;
+  }
+
+  100% {
+    border-color: transparent;
+  }
 }
 
 .intro-section .about {
@@ -196,8 +263,13 @@ body {
 /* images */
 .work-section .project1 .project-img {
   width: 100%;
+  max-width: 900px;
   height: auto;
   margin-bottom: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
 }
 
 .work-section .project1 {
@@ -222,7 +294,6 @@ body {
 }
 
 .work-section .project-sample {
-  /* background-image: url("../img/todolist.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -237,14 +308,15 @@ body {
 
 .work-section .project-sample::after {
   content: '';
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+  background:
+    linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    );
   position: absolute;
   z-index: -1;
   inset: 0;
-
-  /* animation: shift 1s; */
-
-  /* transition: opacity 0.3s linear; */
 }
 
 .work-section .project-sample .full-btn {
@@ -329,18 +401,35 @@ body {
 /* -------About me------- */
 .about-me-section {
   padding: var(--common-padding);
-  background-color: #1c1a19;
   color: white;
-  background-image: url("../img/aboutme-bag.png");
+  background-image: url('https://source.unsplash.com/random/900x900/?abstract');
   background-repeat: no-repeat;
-  background-position: right 70vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  isolation: isolate;
+}
+
+.about-me-section::after {
+  content: '';
+  background:
+    linear-gradient(
+      to right,
+      rgba(57, 58, 55, 1),
+      rgba(57, 58, 55, 0.9) 50%,
+      rgba(57, 58, 55, 0.8) 60%,
+      rgba(57, 58, 55, 0.7) 70%,
+      rgba(57, 58, 55, 0.6) 80%,
+      rgba(57, 58, 55, 0.6)
+    );
+  position: absolute;
+  z-index: -1;
+  inset: 0;
 }
 
 .about-me-section .grid-wrapper {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 100vh;
-  row-gap: 24px;
   padding-top: 80px;
 }
 
@@ -352,6 +441,7 @@ body {
 .about-me-section .grid-wrapper .skill-set hr {
   color: #fff;
   margin-bottom: 140px;
+  margin-top: 140px;
 }
 
 .about-me-section .title {
@@ -416,15 +506,15 @@ body {
 }
 
 .about-me-section .skill-set .lang {
-  list-style-image: url("../img/Rectangle.png");
+  list-style-image: url('../img/Rectangle.png');
 }
 
 .about-me-section .skill-set .fram {
-  list-style-image: url("../img/sq.png");
+  list-style-image: url('../img/sq.png');
 }
 
 .about-me-section .skill-set .skills {
-  list-style-image: url("../img/ca.png");
+  list-style-image: url('../img/ca.png');
 }
 
 .about-me-section .skill-set .category {
@@ -544,6 +634,7 @@ body {
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(2px);
+  z-index: 2;
 }
 
 .model .model-container {
@@ -558,7 +649,17 @@ body {
 
 .model .model-container .project-img {
   width: 100%;
+  max-width: 900px;
+  max-height: 70vh;
   height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.model .model-container .project-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .model .grid-container {
@@ -588,6 +689,11 @@ body {
   text-decoration: none;
 }
 
+.work-section .project1 .project-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 @media all and (min-width: 768px) {
   .nav-bar .menu-bar {
     display: block;
@@ -603,13 +709,6 @@ body {
 
   .nav-bar .toggle-menu {
     display: none;
-  }
-
-  /* ---Intro--- */
-  .intro-section {
-    background-image: url("../img/desktopbg.png");
-    background-size: contain;
-    background-position: center right;
   }
 
   .intro-section .start-intro {
@@ -633,7 +732,7 @@ body {
   }
 
   .work-section .project1 {
-    grid-area: 1/ span 2;
+    grid-area: 1 / span 2;
     flex-direction: row;
   }
 
@@ -647,11 +746,6 @@ body {
   /* ---work end--- */
 
   /* ---about me--- */
-  .about-me-section {
-    background-image: url("../img/aboutdskbg.png");
-    background-size: contain;
-    background-position: top 150px right;
-  }
 
   .about-me-section .grid-wrapper .aboutme {
     max-width: 50%;
@@ -702,6 +796,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
+    white-space: pre-line;
   }
 }
 
@@ -711,38 +806,9 @@ body {
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     color: #f55800;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 72px;
     line-height: 82px;
-  }
-
-  .intro-section .profession {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-size: 32px;
-    line-height: 44px;
-    color: #fff;
-
-    /* animation */
-    display: inline-block;
-    border-right: 5px solid #fff;
-    overflow: hidden;
-    white-space: nowrap;
-    animation:
-      typewrt 3s steps(30, end),
-      blinker 0.5s forwards infinite;
-  }
-
-  @keyframes typewrt {
-    from { width: 0; }
-    to { width: 70%; }
-  }
-
-  @keyframes blinker {
-    0% { border-color: transparent; }
-    50% { border-color: #fff; }
-    100% { border-color: transparent; }
   }
 
   .intro-section .about {
@@ -759,6 +825,10 @@ body {
     align-items: center;
     padding: 0;
     justify-content: start;
+  }
+
+  .intro-section .profession {
+    font-size: 44px;
   }
 
   .intro-section .social {
@@ -808,21 +878,11 @@ body {
   }
 
   .work-section .project1 {
-    grid-area: 1/ span 3;
+    grid-area: 1 / span 3;
   }
 
   .work-section .grid-wrapper {
-    /* grid-template-rows: 75vh; */
     column-gap: 8%;
-  }
-
-  .about-me-section .grid-wrapper {
-    grid-template-rows: 75vh;
-  }
-
-  .about-me-section {
-    background-size: 85%;
-    background-position: top -100px right;
   }
 
   .contact-section {
@@ -855,15 +915,9 @@ body {
     display: none;
   }
 
-  /* .work-section .project2 .full-btn {
-    display: inline;
-  } */
-
   .work-section .project-sample {
     width: 100%;
     height: 450px;
-
-    /* background-image: url("../img/project2.png"); */
     border: 2px solid black;
     position: relative;
     isolation: isolate;
@@ -871,7 +925,12 @@ body {
 
   .work-section .project-sample::after {
     content: '';
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+    background:
+      linear-gradient(
+        180.45deg,
+        rgba(38, 38, 38, 0) 0.75%,
+        rgba(38, 38, 38, 0.9) 61.94%
+      );
     position: absolute;
     z-index: -1;
     inset: 0;
@@ -889,7 +948,7 @@ body {
   }
 
   .work-section .project-sample:hover .content-wrapper {
-    display: none;
+    opacity: 0;
   }
 
   .about-me-section .grid-wrapper .aboutme {

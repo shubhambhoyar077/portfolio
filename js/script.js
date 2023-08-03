@@ -23,41 +23,32 @@ const firstProject = document.querySelector('.work-section .project1');
 const projectCards = document.querySelectorAll('.work-section .project-sample');
 
 projectsInfo.push({
-  projectName: 'Recipe App',
-  projectLang: ['Ruby on Rails', 'bootstrap', 'Postgres'],
-  projectImgSrc: './img/recipe1.png',
-  projectImgAlt: 'Recipe',
-  featureImg: './img/recipe2.png',
-  projectshortDescription:
-    'The Recipe app keeps track of all your recipes, ingredients, and inventory. ',
-  projectDescription:
-    'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. ',
-  seeLive: '#',
-  seeSource: 'https://github.com/shubhambhoyar077/recipe-app',
-});
-projectsInfo.push({
-  projectName: 'SavEarly:- Budget App',
-  projectLang: ['Ruby on Rails', 'bootstrap', 'Postgres'],
-  projectImgSrc: './img/categorysave.png',
+  projectName: 'RideEase - A Ruby on Rails and React Project',
+  projectLang: ['Ruby on Rails', 'React', 'Postgres'],
+  projectImgSrc: './img/ride.png',
   projectImgAlt: 'SavEarly',
-  featureImg: './img/trasave.png',
+  featureImg: './img/ride.png',
   projectshortDescription:
-    'SavEarly is a web app that helps users categorize and manage their transactions for easy expense tracking. Stay organized and gain insights into your spending habits with this user-friendly tool.',
-  projectDescription:
-    'SavEarly is a web app that helps users categorize and manage their transactions for easy expense tracking. Stay organized and gain insights into your spending habits with this user-friendly tool.',
-  seeLive: 'https://savearly.onrender.com/',
+    '"RideEase" is a group project I created, combining the power of Ruby on Rails and React to revolutionize the test drive booking experience.',
+  projectDescription: `"RideEase" is a group project I created, combining the power of Ruby on Rails and React to revolutionize the test drive booking experience.
+    📅 With "RideEase," users can:
+    ✅ Explore a curated selection of cars
+    ✅ Easily schedule test drives
+    💼 "RideEase" showcases my passion for creating user-friendly applications and integrating cutting-edge technologies.`,
+
+  seeLive: 'https://rideease.onrender.com',
   seeSource: 'https://github.com/shubhambhoyar077/budget-app',
 });
 projectsInfo.push({
   projectName: 'Crypto Currency ',
   projectLang: ['React', 'CSS', 'API'],
-  projectImgSrc: './img/crypto1.png',
+  projectImgSrc: './img/crypto.png',
   projectImgAlt: 'Crypto',
-  featureImg: './img/crypto2.png',
+  featureImg: './img/crypto.png',
   projectshortDescription:
     'Crypto is a SPA for users to check the details of top 20 cryptocurrencies. ',
   projectDescription:
-    'Crypto is a SPA for users to check the details of top 20 cryptocurrencies. ',
+    "Introducing the Crypto! 🚀 A sleek and user-friendly website built with React, where you can explore the top 10 trending cryptocurrencies in real-time. Get instant updates on their prices, market caps, and other essential information, all powered by real-time API data. Whether you're a seasoned crypto enthusiast or just curious about the latest trends, Crypto has got you covered. Stay ahead of the game and keep your finger on the pulse of the crypto world with Crypto!",
   seeLive: 'https://crypto-j3cj.onrender.com/',
   seeSource: 'https://github.com/shubhambhoyar077/crypto-currency',
 });
@@ -70,20 +61,21 @@ projectsInfo.push({
   projectshortDescription:
     'Space Hub is a webapp built with React and Redux, it fetches data from SpaceX API and Displays it. ',
   projectDescription:
-    'Space Hub is a webapp built with React and Redux, it fetches data from SpaceX API and Displays it. ',
+    "Welcome to the Space Travel Hub! 🚀 Embark on an extraordinary journey through the cosmos with our out-of-this-world web application. Developed as a thrilling group project, Space Travel Hub integrates SpaceX's powerful API to offer you an unrivaled experience in the realm of space exploration.",
   seeLive: 'https://space-hub-osb.netlify.app/',
   seeSource: 'https://github.com/shubhambhoyar077/React_Group_Project',
 });
 projectsInfo.push({
   projectName: 'Game Developer Conference Capstone',
   projectLang: ['html', 'css', 'javascript'],
-  projectImgSrc: './img/gdc_capstone.png',
+  projectImgSrc: './img/gdc.png',
   projectImgAlt: 'game developer capstone project',
-  featureImg: './img/gdc_capstone.png',
+  featureImg: './img/gdc.png',
   projectshortDescription:
     'Game Developer Conference is a first capstone project of Microverse',
-  projectDescription:
-    'This capstone project is base on real time application and topic for this project is Game Developer Conference 2023',
+  projectDescription: `Welcome to the Game Developer Conference (GDC) Project! 🎮🕹️ Immerse yourself in the world of game development with this captivating and cutting-edge web application, crafted entirely using JavaScript.
+
+    At GDC, we believe in empowering game developers to unleash their creativity and shape the future of gaming. Dive into a dynamic platform that offers a plethora of resources, insights, and tools to fuel your gaming journey.`,
   seeLive: 'https://shubhambhoyar077.github.io/gdc_capstone/',
   seeSource: 'https://github.com/shubhambhoyar077/gdc_capstone',
 });
@@ -100,16 +92,35 @@ projectsInfo.push({
   seeSource: 'https://github.com/shubhambhoyar077/to-do-list',
 });
 projectsInfo.push({
-  projectName: 'Awesome Book',
+  projectName: 'SpikeOut',
+  projectLang: ['GODOT', 'GDScript', 'Google console'],
+  projectImgSrc: './img/spike.png',
+  projectImgAlt: 'Recipe',
+  featureImg: './img/spike.png',
+  projectshortDescription:
+    'Start rotating and avoid spikes to complete levels.',
+  projectDescription: `Start rotating and avoid spikes to complete levels.
+
+    How to play?
+    ◉ Touch and Drag to rotate center circle.
+    ◉ Avoid Spike.
+    ◉ Pop color balls to clear color goals.
+    ◉ Clear all goals to complete level.`,
+  seeLive: 'https://play.google.com/store/apps/details?id=com.arkrid.spikeout',
+  seeSource: '#',
+});
+projectsInfo.push({
+  projectName: 'Leaderboard',
   projectLang: ['html', 'bootstrap', 'JavaScript'],
-  projectImgSrc: './img/bookstore.png',
+  projectImgSrc: './img/leader.png',
   projectImgAlt: 'Awesome book project',
-  featureImg: './img/bookstore.png',
-  projectshortDescription: 'Awesome Book, Created using ES6 javascript.',
+  featureImg: './img/leader.png',
+  projectshortDescription:
+    'This project registers the score and player name using APIs, and it also displays the top players.',
   projectDescription:
-    "'Awesome books' is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, I have learn how to manage data using JavaScript. Thanks to this my website will be more interactive. I also use a medium-fidelity wireframe to build the UI.",
-  seeLive: 'https://shubhambhoyar077.github.io/awesome-book/',
-  seeSource: 'https://github.com/shubhambhoyar077/awesome-book',
+    "'This project registers the score and player name using APIs, and it also displays the top players.",
+  seeLive: 'https://shubhambhoyar077.github.io/leaderboard/dist/',
+  seeSource: 'https://github.com/shubhambhoyar077/leaderboard',
 });
 
 function addProjectLang(langList) {
