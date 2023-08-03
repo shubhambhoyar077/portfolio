@@ -17,7 +17,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1;
   background-color: rgba(57, 58, 55, 0.9);
   padding: 12px 0;
 }
@@ -618,6 +618,7 @@ body {
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(2px);
+  z-index: 2;
 }
 
 .model .model-container {
