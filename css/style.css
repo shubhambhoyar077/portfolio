@@ -266,8 +266,18 @@ body {
 /* images */
 .work-section .project1 .project-img {
   width: 100%;
+  max-width: 900px;
   height: auto;
   margin-bottom: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.work-section .project1 .project-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .work-section .project1 {
