@@ -643,7 +643,17 @@ body {
 
 .model .model-container .project-img {
   width: 100%;
+  max-width: 900px;
+  max-height: 70vh;
   height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.model .model-container .project-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .model .grid-container {
@@ -787,6 +797,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
+    white-space: pre-line;
   }
 }
 
