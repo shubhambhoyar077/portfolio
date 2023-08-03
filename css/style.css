@@ -123,7 +123,6 @@ body {
   background-position: center;
   position: relative;
   isolation: isolate;
-  /* background-position: bottom -50px right; */
 }
 
 .intro-section::after {
@@ -150,13 +149,6 @@ body {
   color: #ff6b00;
   font-size: 50px;
 }
-
-/* .intro-section .profession {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-size: 24px;
-} */
 
 .intro-section .profession {
   margin: 0;
@@ -302,7 +294,6 @@ body {
 }
 
 .work-section .project-sample {
-  /* background-image: url("../img/todolist.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -325,10 +316,6 @@ body {
   position: absolute;
   z-index: -1;
   inset: 0;
-
-  /* animation: shift 1s; */
-
-  /* transition: opacity 0.3s linear; */
 }
 
 .work-section .project-sample .full-btn {
@@ -413,18 +400,34 @@ body {
 /* -------About me------- */
 .about-me-section {
   padding: var(--common-padding);
-  background-color: #1c1a19;
   color: white;
-  background-image: url('../img/aboutme-bag.png');
+  background-image: url('https://source.unsplash.com/random/900x900/?abstract');
   background-repeat: no-repeat;
-  background-position: right 70vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  isolation: isolate;
+}
+
+.about-me-section::after {
+  content: '';
+  background: linear-gradient(
+    to right,
+    rgba(57, 58, 55, 1),
+    rgba(57, 58, 55, 0.9) 50%,
+    rgba(57, 58, 55, 0.8) 60%,
+    rgba(57, 58, 55, 0.7) 70%,
+    rgba(57, 58, 55, 0.6) 80%,
+    rgba(57, 58, 55, 0.6)
+  );
+  position: absolute;
+  z-index: -1;
+  inset: 0;
 }
 
 .about-me-section .grid-wrapper {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 100vh;
-  row-gap: 24px;
   padding-top: 80px;
 }
 
@@ -436,6 +439,7 @@ body {
 .about-me-section .grid-wrapper .skill-set hr {
   color: #fff;
   margin-bottom: 140px;
+  margin-top: 140px;
 }
 
 .about-me-section .title {
@@ -700,13 +704,6 @@ body {
     display: none;
   }
 
-  /* ---Intro--- */
-  /* .intro-section {
-    background-image: url('../img/desktopbg.png');
-    background-size: contain;
-    background-position: center right;
-  } */
-
   .intro-section .start-intro {
     max-width: 50%;
   }
@@ -742,11 +739,6 @@ body {
   /* ---work end--- */
 
   /* ---about me--- */
-  .about-me-section {
-    background-image: url('../img/aboutdskbg.png');
-    background-size: contain;
-    background-position: top 150px right;
-  }
 
   .about-me-section .grid-wrapper .aboutme {
     max-width: 50%;
@@ -829,9 +821,6 @@ body {
   }
 
   .intro-section .profession {
-    /* margin: 0;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal; */
     font-size: 44px;
   }
 
@@ -886,19 +875,8 @@ body {
   }
 
   .work-section .grid-wrapper {
-    /* grid-template-rows: 75vh; */
     column-gap: 8%;
   }
-
-  .about-me-section .grid-wrapper {
-    grid-template-rows: 75vh;
-  }
-
-  .about-me-section {
-    background-size: 85%;
-    background-position: top -100px right;
-  }
-
   .contact-section {
     flex-direction: row;
     height: 75vh;
@@ -929,15 +907,9 @@ body {
     display: none;
   }
 
-  /* .work-section .project2 .full-btn {
-    display: inline;
-  } */
-
   .work-section .project-sample {
     width: 100%;
     height: 450px;
-
-    /* background-image: url("../img/project2.png"); */
     border: 2px solid black;
     position: relative;
     isolation: isolate;
@@ -967,7 +939,7 @@ body {
   }
 
   .work-section .project-sample:hover .content-wrapper {
-    display: none;
+    opacity: 0;
   }
 
   .about-me-section .grid-wrapper .aboutme {
