@@ -12,8 +12,16 @@ body {
 }
 
 /* nav-bar design as per microverse template 2 */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(57, 58, 55, 0.9);
+  padding: 12px 0;
+}
 .nav-bar ul {
-  background-color: #3c3a39;
   display: flex;
   margin: 0;
   justify-content: space-between;
@@ -99,7 +107,7 @@ body {
   color: white;
   background-color: #1c1a19;
   display: flex;
-  height: calc(100vh - 45px);
+  height: 100vh;
   margin: 0;
   padding: var(--common-padding);
   flex-direction: column;
