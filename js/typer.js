@@ -4,23 +4,16 @@ const professions = [
   'Frontend Developer',
   'Full Stack Developer',
 ];
-let counter = 0;
-let intervalId;
 
-function changeProfession() {
-  const professionElement = document.querySelector('#profession');
-  professionElement.classList.add('typ-ani');
-  professionElement.textContent = `I'm a ${professions[counter]}.`;
-  setTimeout(() => {
-    professionElement.classList.remove('typ-ani');
-  }, 3000);
-
-  counter += 1;
-  if (counter === professions.length) {
-    clearInterval(intervalId);
-  }
+const professionElement = document.querySelector('#profession span');
+if (professionElement) {
+  /* eslint-disable */
+  new Typed('.profession span', {
+    strings: professions,
+    loop: true,
+    typeSpeed: 100,
+    backSpeed: 50,
+    backDelay: 2000,
+  });
+  /* eslint-enable */
 }
-
-changeProfession();
-
-intervalId = setInterval(changeProfession, 4000);

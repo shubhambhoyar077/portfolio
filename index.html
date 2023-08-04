@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="vendor/aos/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Home</title>
   </head>
@@ -53,9 +54,13 @@
     <main class="main-area">
       <section class="intro-section">
         <div class="start-intro">
-          <h1 class="intro-name">Hey There.<br />I'm Shubham</h1>
-          <h3 class="profession" id="profession">I'am a Software Developer.</h3>
-          <p class="about">
+          <h1 class="intro-name" data-aos="zoom-in">
+            Hey There.<br />I'm Shubham
+          </h1>
+          <h3 class="profession" id="profession" data-aos="zoom-in">
+            I'm a <span></span>
+          </h3>
+          <p class="about" data-aos="zoom-in">
             I can help you build a product , feature or website Look through
             some of my work and experience! If you like what you see and have a
             project you need coded, don't hestiate to contact me.
@@ -98,20 +103,20 @@
       <section class="work-section" id="portfolio">
         <h2 class="work-section-heading"><span>My Recent Works</span></h2>
         <div class="grid-wrapper">
-          <div class="project1"></div>
-          <div class="project2 project-sample"></div>
-          <div class="project3 project-sample"></div>
-          <div class="project4 project-sample"></div>
-          <div class="project5 project-sample"></div>
-          <div class="project6 project-sample"></div>
-          <div class="project7 project-sample"></div>
+          <div class="project1" data-aos="fade-up"></div>
+          <div class="project2 project-sample" data-aos="flip-left"></div>
+          <div class="project3 project-sample" data-aos="flip-right"></div>
+          <div class="project4 project-sample" data-aos="flip-left"></div>
+          <div class="project5 project-sample" data-aos="flip-right"></div>
+          <div class="project6 project-sample" data-aos="flip-left"></div>
+          <div class="project7 project-sample" data-aos="flip-right"></div>
         </div>
       </section>
       <section class="about-me-section" id="about">
         <div class="grid-wrapper">
           <div class="aboutme">
-            <h2 class="title">About Me</h2>
-            <p class="summary">
+            <h2 class="title" data-aos="fade-right">About Me</h2>
+            <p class="summary" data-aos="fade-left">
               Hello I'm a software developer! I can help you build a product ,
               feature or website Look through some of my work and experience! If
               you like what you see and have a project you need coded, don’t
@@ -128,30 +133,30 @@
               <li class="category lang">
                 Language
                 <ul class="sublist">
-                  <li>Javascript</li>
-                  <li>Ruby</li>
-                  <li>Python</li>
-                  <li>TypeScript</li>
-                  <li>React</li>
+                  <li data-aos="fade-right">Javascript</li>
+                  <li data-aos="fade-left">Ruby</li>
+                  <li data-aos="fade-right">Python</li>
+                  <li data-aos="fade-left">TypeScript</li>
+                  <li data-aos="fade-right">React</li>
                 </ul>
               </li>
               <li class="category fram">
                 Framework
                 <ul class="sublist">
-                  <li>Ruby on Rails</li>
-                  <li>Django</li>
-                  <li>RSPec</li>
-                  <li>CapyBara</li>
-                  <li>Selenium</li>
+                  <li data-aos="fade-right">Ruby on Rails</li>
+                  <li data-aos="fade-left">Django</li>
+                  <li data-aos="fade-right">RSPec</li>
+                  <li data-aos="fade-left">CapyBara</li>
+                  <li data-aos="fade-right">Selenium</li>
                 </ul>
               </li>
               <li class="category skills">
                 Skills
                 <ul class="sublist">
-                  <li>Github</li>
-                  <li>Gitlab</li>
-                  <li>Redux</li>
-                  <li>Jest</li>
+                  <li data-aos="fade-right">Github</li>
+                  <li data-aos="fade-left">Gitlab</li>
+                  <li data-aos="fade-right">Redux</li>
+                  <li data-aos="fade-left">Jest</li>
                 </ul>
               </li>
             </ul>
@@ -159,7 +164,7 @@
         </div>
       </section>
       <section class="contact-section" id="contact">
-        <h3>
+        <h3 data-aos="fade-right">
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </h3>
@@ -167,6 +172,7 @@
           class="contact-form"
           action="https://formspree.io/f/xjvdkweq"
           method="post"
+          data-aos="fade-left"
         >
           <ul>
             <li>
@@ -267,6 +273,8 @@
         </div>
       </section>
     </div>
+    <script src="vendor/aos/aos.js"></script>
+    <script src="vendor/typed.js/typed.umd.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/typer.js"></script>
   </body>

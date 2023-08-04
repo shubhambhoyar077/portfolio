@@ -152,12 +152,18 @@ body {
   font-size: 50px;
 }
 
-.intro-section .profession {
+.intro-section .profession,
+.intro-section span {
   margin: 0;
+  display: inline;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 24px;
   color: #fff;
+}
+
+.intro-section span {
+  border-bottom: 3px solid #ff6b00;
 }
 
 .intro-section .typ-ani {
@@ -827,7 +833,8 @@ body {
     justify-content: start;
   }
 
-  .intro-section .profession {
+  .intro-section .profession,
+  .intro-section span {
     font-size: 44px;
   }
 

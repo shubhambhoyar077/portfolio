@@ -124,12 +124,8 @@ projectsInfo.push({
 });
 
 function addProjectLang(langList) {
-  // const prolangs = model.querySelector('.project-lang');
   let prolangs = '';
-  // prolangs.replaceChildren();
   langList.forEach((lang) => {
-    // const li = document.createElement('li');
-    // li.textContent = lang;
     prolangs += `
           <li>${lang}</li>`;
   });
@@ -248,3 +244,14 @@ if (!localStorage.getItem('formData')) {
 } else {
   restoreData();
 }
+
+/* eslint-disable */
+window.addEventListener('load', () => {
+  AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: true,
+    mirror: false,
+  });
+});
+/* eslint-enable */
