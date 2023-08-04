@@ -124,12 +124,8 @@ projectsInfo.push({
 });
 
 function addProjectLang(langList) {
-  // const prolangs = model.querySelector('.project-lang');
   let prolangs = '';
-  // prolangs.replaceChildren();
   langList.forEach((lang) => {
-    // const li = document.createElement('li');
-    // li.textContent = lang;
     prolangs += `
           <li>${lang}</li>`;
   });
@@ -141,13 +137,13 @@ function createProjectCards() {
     if (index === 0) {
       firstProject.innerHTML = `
           <img src=${
-  project.projectImgSrc
-} alt="sample image" class="project-img">
+            project.projectImgSrc
+          } alt="sample image" class="project-img">
           <div class="project-content">
               <h3 class="project-name">${project.projectName}</h3>
               <p class="project-description">${
-  project.projectshortDescription
-}</p>
+                project.projectshortDescription
+              }</p>
               <ul class="project-lang">
                   ${addProjectLang(project.projectLang)}
               </ul>
@@ -161,8 +157,8 @@ function createProjectCards() {
             <div class="content-wrapper">
                 <h3 class="project-name">${project.projectName}</h3>
                 <p class="project-description">${
-  project.projectshortDescription
-}</p>
+                  project.projectshortDescription
+                }</p>
                 <ul class="project-lang">
                   ${addProjectLang(project.projectLang)}
                 </ul>
@@ -182,11 +178,12 @@ const closepopup = document.querySelector('.model .close-popup');
 
 function addProjectInfo(projectObj) {
   model.querySelector('.project-name').textContent = projectObj.projectName;
-  model.querySelector('.project-description').textContent = projectObj.projectDescription;
+  model.querySelector('.project-description').textContent =
+    projectObj.projectDescription;
   model.querySelector('.project-img').src = projectObj.featureImg;
   model.querySelector('.project-img').alt = projectObj.projectImgAlt;
   model.querySelector('.project-lang').innerHTML = `${addProjectLang(
-    projectObj.projectLang,
+    projectObj.projectLang
   )}`;
   model.querySelector('.model .see-live').href = projectObj.seeLive;
   model.querySelector('.model .see-source').href = projectObj.seeSource;
@@ -248,3 +245,12 @@ if (!localStorage.getItem('formData')) {
 } else {
   restoreData();
 }
+
+window.addEventListener('load', () => {
+  AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: true,
+    mirror: false,
+  });
+});

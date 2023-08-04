@@ -128,16 +128,15 @@ body {
 
 .intro-section::after {
   content: '';
-  background:
-    linear-gradient(
-      to right,
-      rgba(57, 58, 55, 1),
-      rgba(57, 58, 55, 0.9) 50%,
-      rgba(57, 58, 55, 0.8) 60%,
-      rgba(57, 58, 55, 0.7) 70%,
-      rgba(57, 58, 55, 0.6) 80%,
-      rgba(57, 58, 55, 0.6)
-    );
+  background: linear-gradient(
+    to right,
+    rgba(57, 58, 55, 1),
+    rgba(57, 58, 55, 0.9) 50%,
+    rgba(57, 58, 55, 0.8) 60%,
+    rgba(57, 58, 55, 0.7) 70%,
+    rgba(57, 58, 55, 0.6) 80%,
+    rgba(57, 58, 55, 0.6)
+  );
   position: absolute;
   z-index: -1;
   inset: 0;
@@ -152,12 +151,18 @@ body {
   font-size: 50px;
 }
 
-.intro-section .profession {
+.intro-section .profession,
+.intro-section span {
   margin: 0;
+  display: inline;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 24px;
   color: #fff;
+}
+
+.intro-section span {
+  border-bottom: 3px solid #ff6b00;
 }
 
 .intro-section .typ-ani {
@@ -308,12 +313,11 @@ body {
 
 .work-section .project-sample::after {
   content: '';
-  background:
-    linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
-    );
+  background: linear-gradient(
+    180.45deg,
+    rgba(38, 38, 38, 0) 0.75%,
+    rgba(38, 38, 38, 0.9) 61.94%
+  );
   position: absolute;
   z-index: -1;
   inset: 0;
@@ -412,16 +416,15 @@ body {
 
 .about-me-section::after {
   content: '';
-  background:
-    linear-gradient(
-      to right,
-      rgba(57, 58, 55, 1),
-      rgba(57, 58, 55, 0.9) 50%,
-      rgba(57, 58, 55, 0.8) 60%,
-      rgba(57, 58, 55, 0.7) 70%,
-      rgba(57, 58, 55, 0.6) 80%,
-      rgba(57, 58, 55, 0.6)
-    );
+  background: linear-gradient(
+    to right,
+    rgba(57, 58, 55, 1),
+    rgba(57, 58, 55, 0.9) 50%,
+    rgba(57, 58, 55, 0.8) 60%,
+    rgba(57, 58, 55, 0.7) 70%,
+    rgba(57, 58, 55, 0.6) 80%,
+    rgba(57, 58, 55, 0.6)
+  );
   position: absolute;
   z-index: -1;
   inset: 0;
@@ -827,7 +830,8 @@ body {
     justify-content: start;
   }
 
-  .intro-section .profession {
+  .intro-section .profession,
+  .intro-section span {
     font-size: 44px;
   }
 
@@ -925,12 +929,11 @@ body {
 
   .work-section .project-sample::after {
     content: '';
-    background:
-      linear-gradient(
-        180.45deg,
-        rgba(38, 38, 38, 0) 0.75%,
-        rgba(38, 38, 38, 0.9) 61.94%
-      );
+    background: linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    );
     position: absolute;
     z-index: -1;
     inset: 0;
