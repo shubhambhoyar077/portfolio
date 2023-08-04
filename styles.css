@@ -264,6 +264,12 @@ small {
 /*******************
 		HEADER
 *************************/
+.stick {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
 .nav {
   width: 100%;
   padding: 0 1rem;
@@ -335,6 +341,9 @@ small {
 /*******************
 		HERO SECTION
 *************************/
+#main-content {
+  padding-top: 10rem;
+}
 .hero {
   padding: 0 1rem;
 }
@@ -355,6 +364,15 @@ small {
 
 .name {
   font-size: clamp(4rem, 5vw, 6rem);
+}
+
+.service {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 2vw, 3rem);
+}
+
+.service span {
+  border-bottom: 3px solid var(--accent-clr);
 }
 
 .intro {
@@ -723,7 +741,7 @@ small {
 /* responsiveness */
 @media screen and (max-width: 50em) {
   body::after {
-    position: absolute;
+    position: fixed;
     content: '';
     top: 0;
     left: 0;
