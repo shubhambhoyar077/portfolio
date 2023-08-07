@@ -41,3 +41,15 @@ if (professionElement) {
     backDelay: 2000,
   });
 }
+
+const colorModeBtn = document.getElementById('mode');
+
+// Function to toggle color mode
+function toggleColorMode() {
+  console.log('dkfvbh');
+  const isDarkMode = document.documentElement.classList.contains('light-mode');
+  document.documentElement.classList.toggle('light-mode', !isDarkMode);
+}
+
+// Add click event listener to the button
+colorModeBtn.addEventListener('click', toggleColorMode);

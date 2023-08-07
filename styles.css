@@ -12,12 +12,36 @@
   --transition: cubic-bezier(0.25, 0.32, 0.85, 0.58);
   --transition-clr: color 300ms var(--transition);
   font-size: 10px;
+  color-scheme: light dark;
 
   /* style for scrollbar */
   scrollbar-width: thin;
   scrollbar-color: var(--other-clr) hsl(0, 0%, 73%);
   scrollbar-width: thin;
   scrollbar-gutter: stable;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary-clr: hsl(0, 0%, 95%); /* Very light gray */
+    --secondary-clr: hsl(0, 0%, 80%); /* Light gray */
+    --other-clr: hsl(0, 0%, 50%); /* Medium gray */
+    --tag-clr: hsl(0, 0%, 40%); /* Dark gray */
+    --accent-clr: hsl(30, 100%, 50%);
+    --accent-other-clr: hsl(36, 100%, 60%);
+    --main-clr: hsl(0, 0%, 5%); /* Almost black */
+  }
+}
+
+.light-mode {
+  --primary-clr: hsl(0, 0%, 95%); /* Very light gray */
+  --secondary-clr: hsl(0, 0%, 80%); /* Light gray */
+  --other-clr: hsl(0, 0%, 50%); /* Medium gray */
+  --tag-clr: hsl(0, 0%, 40%); /* Dark gray */
+  --accent-clr: hsl(30, 100%, 50%);
+  --accent-other-clr: hsl(36, 100%, 60%);
+  --main-clr: hsl(0, 0%, 5%); /* Almost black */
+  transition: var(--transition-clr);
 }
 
 /* style webkit browsers (chrome, edge) scrollbar */
